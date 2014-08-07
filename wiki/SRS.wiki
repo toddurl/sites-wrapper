@@ -1,30 +1,39 @@
-Software Requirements Specification
-This SRS identifies the behavior of SitesWrapper, including a set of use cases that describe the interactions users will have with various components of the software system. This SRS also contains nonfunctional requirements. Non-functional requirements impose constraints on the design or implementation (such as performance engineering requirements, quality standards, or design constraints) .
-SitesWrapper
+SitesWrapper SRS
 Version 1.0
 May 1, 2014
 Prepared by Todd Url
-1. Introduction
-SitesWrapper™ is a “look and feel” customizable Google App Engine based Google Web Toolkit web application which wraps and leverages one or more Google Sites to provide a Google Apps based content management system. The web app components of SitesWrapper are configured to present content 
 
- which employs a collection of commercially available Android, iOS and Apps Script based configuration clients.
+This SRS identifies the behavior of SitesWrapper, including a set of use cases that describe the interactions users will have with various components of the software system. This SRS also contains nonfunctional requirements which impose constraints on the design or implementation (such as performance engineering requirements, quality standards, or design constraints) .
+
+1. Introduction
+
+SitesWrapper™ is a “look and feel” customizable Google App Engine based Google Web Toolkit web application which wraps and leverages one or more Google Sites to provide a Google Apps based content management system.
+
 The application is composed of an HTML5 web app which wraps zero or more Google Sites, as well as a collection client apps used to configure the look, feel, style and content of the webapp wrapper.
 Content developed in Google Apps (or reference-able via URL), is used to decorate the content of the wrapper, as well as the content of each Google Site wrapped by the wrapper, via the configuration clients.
+
 1.1 Purpose
+
 The purpose of this document is to thoroughly describe, through the use of specifically specified requirements, the functionality of SitesWrapper, a collection of software items which leverages Google products and services to deliver a professional looking, feature rich internet presence to organizations of any type, size or financial position.
+
 In addition, by defining the functional requirements as a set of use cases describing the interactions users will have with each software item, this document will serve as the definitive basis for all “functional test” cases, procedures, scripts, suites and coverage metrics. Other types of testing are beyond the scope of this document.
+
 1.2 Definitions
+
 wrap·per  (răp′ər)
 Client Wrapper - The client side software component which executes in the desktop or mobile browser. The client wrapper is a Google Web Toolkit module having one or more views decorated with information items. Each view (or page) can wrap one or more Google Sites, presenting them as a coherent, sorted collection of Google Apps managed content.
 Server Services Wrapper - The server side components which generate a simple yet complete and useful server based HTML only website for browsers which don’t use JavaScript to render a page. In this case, SitesWrapper generates an HTML website having one or more views decorated with information items. Each view (or page) can wrap one or more Google Sites, presenting them as a GoogleBot crawlable collection of Google Apps managed content.
 in·for·ma·tion i·tem  (ĭn′fər-mā′shən) (ī′təm)
-A URL referenceable resource. An information item of any type may reside anywhere in the internet. However, an information item’s attributes are defined via a configuration client and stored as a persistent object in the Google Datastore.
+A URL reference-able resource. An information item of any type may reside anywhere in the internet. However, an information item’s attributes are defined via a configuration client and stored as a persistent object in the Google Datastore.
 con·fig·u·ra·tion cli·ent (kən-fĭg′yə-rā′shən) (klī′ənt)
 A platform specific software item which reflects, and is used to maintain, the state of the configuration Entity objects in the Google Datastore via Google Cloud Endpoints.
+
 1.3 System Overview
-Creative content is generated using Google Apps and hosted as URL referenceable information items in Google Drive, Google+, Picasa Web and virtually any other web service including Google Sites. URL references and other attributes of the creative content are entered into various “forms” accessible via one or more configuration clients. The configuration clients Create, Read, Update and Delete entity objects in the Google Datastore via Google Cloud Endpoints. The entity objects are used by the Server and Client Wrappers to render HTML and JavaScript frontends respectively, each of which presents essentially the same webapp in terms of functionality via different paradigms depending on whether the site is accessed by a JavaScript enabled browser. That is, if the App Engine based website is accessed via a JavaScript enabled browser, a browser independent GWT webapp is rendered following the MVP design pattern. If the App Engine based website is accessed by an HTML only browser, the Googlebot for example, an HTML only webapp is rendered following the MVC design pattern. Authentication and authorization is handled exclusively via Google Accounts using OAuth 2.0 and the Google+ signin button.
+
+Creative content is generated using Google Apps and hosted as URL reference-able information items in Google Drive, Google+, Picasa Web and virtually any other web service including Google Sites. URL references and other attributes of the creative content are entered into various “forms” accessible via one or more configuration clients. The configuration clients Create, Read, Update and Delete entity objects in the Google Datastore via Google Cloud Endpoints. The entity objects are used by the Server and Client Wrappers to render HTML and JavaScript front ends respectively, each of which presents essentially the same webapp in terms of functionality via different paradigms depending on whether the site is accessed by a JavaScript enabled browser. That is, if the App Engine based website is accessed via a JavaScript enabled browser, a browser independent GWT web app is rendered following the MVP design pattern. If the App Engine based website is accessed by an HTML only browser, the Google bot for example, an HTML only webapp is rendered following the MVC design pattern. Authentication and authorization is handled exclusively via Google Accounts using OAuth 2.0 and the Google+ signin button.
 
 1.4 References
+
 Google App Engine - Google App Engine is a Platform as a Service (PaaS) offering that lets you build and run applications on Google’s infrastructure.
 Android - Develop a mobile backend using custom code with Google Cloud Endpoints.
 Apps Script - Build an add-on for Google Apps Sheet.
@@ -32,7 +41,9 @@ iOS - Apple's developer guides include overviews, tutorials, programming guides,
 Google Web Toolkit - GWT is a development toolkit for building and optimizing complex browser-based applications.
 2. Overall Description
 What makes SitesWrapper different is that the overall look and feel of the presentation interface can be changed to match some of the webs most popular sites without affecting the content or functionality. The content on the other hand, which is generated using Google Apps and deployed as a collection of Google Sites, gets “wrapped” and presented homogeneously as a SitesWrapper site. The configuration of a SitesWrapper site (as opposed to the content), is dictated by the application data model which is maintained as a collection of persistent objects in the Google App Engine Datastore and updated by the individual configuration clients via Google Cloud Messaging.
+
 2.1 Product Perspective
+
 SitesWrapper is composed of five distinct software components. Two of the components, the server service wrapper and the client wrapper share a common source tree and are maintained as part of the same eclipse project, SitesWrapper-AppEngine-GWT. The other three items, which are maintained and distributed separately, are the Android, iOS and Apps Script based configuration clients; SitesWrapper-Android, SitesWrapper-iOS and SitesWrapper-AppsScript respectively. 
 SitesWrapper-AppEngine-GWT
 Server Service Wrapper - Although technically in the same source tree and maintained as part of the same eclipse based project as the client wrapper, the server service wrapper is the server side Java component which provides MVC based HTML only web services as well service access to the datastore entity objects via endpoints. Additionally each MVC based HTML page view generated by the server in response to an HTTP GET is also a fully functional GWT host page. This dual nature is what enables the client wrapper to be accessed from any server service wrapper generated landing page.
