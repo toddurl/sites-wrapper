@@ -1,4 +1,4 @@
 = Table Of Contents =
 
-* [Purpose Identifies the purpose of this Wiki]
-* [Definitions The meaning of terms found in this Wiki]
+  * [Purpose Identifies the purpose of this Wiki]
+  * [Definitions The meaning of terms found in this Wiki]
