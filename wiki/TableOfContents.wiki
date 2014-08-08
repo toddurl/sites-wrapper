@@ -1,12 +1,12 @@
 = Table Of Contents =
 
-  * [Purpose Identifies the purpose of this Wiki]
-  * [Definitions The meaning of terms found in this Wiki]
+  * [Purpose Purpose - Identifies the purpose of this Wiki]
+  * [Definitions Definitions - The meaning of terms found in this Wiki]
   * [Articles HOWTO articles]
     * [ArticlesXSS Web security]
-    * [ArticlesDom DOM manipulation]
+    * [Purpose DOM manipulation]
     * [ArticlesStyle CSS and style]
     * [ArticlesTips Tips and tricks]
-  * [DOMReference DOM reference]
+  * [Definitions DOM reference]
   * [HTMLElements HTML reference]
   * [CSSReference CSS reference]
