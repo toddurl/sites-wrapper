@@ -1,5 +1,4 @@
 #summary Identifies the purpose of this Wiki.
-#sidebar TestCase
 
 = Purpose =
 
