@@ -1,0 +1,7 @@
+#summary Identifies the purpose of this Wiki.
+
+= Purpose =
+
+The purpose of this document is to thoroughly describe, through the use of specifically specified requirements, the functionality of SitesWrapper, a collection of software items which leverages Google products and services to deliver a professional looking, feature rich internet presence to organizations of any type, size or financial position.
+
+In addition, by defining the functional requirements as a set of use cases describing the interactions users will have with each software item, this document will serve as the definitive basis for all “functional test” cases, procedures, scripts, suites and coverage metrics. Other types of testing are beyond the scope of this document.
