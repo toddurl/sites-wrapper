@@ -1,0 +1,11 @@
+#summary The Android component of SitesWrapper
+
+= SitesWrapper-Android =
+
+  *Android Configuration Client* - Available on Google Play, the Android Configuration Client provides administrators the ability to configure a SitesWrapper site using the familiar Android app settings screens. 
+
+The Android app consists of settings screens covering all aspects of the site as well as the ability to add or remove pages or Google Sites from within pages of the web app.
+
+Settings defined in the setting screens of the configuration client reflect and automatically update the current state entity objects in the GAE datastore.
+
+Changes made via other configuration clients as well as select application alerts are propagated to the Android Configuration Client via Google Cloud Messaging and Google Wear.
