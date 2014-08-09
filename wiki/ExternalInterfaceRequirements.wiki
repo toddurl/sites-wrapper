@@ -9,7 +9,7 @@ Requirements placed on the external interfaces of the system are consistent with
   # *Apps Script Configuration Client* - In the case of the AppScript Configuration client, [https://developers.google.com/apps-script/guides/html/best-practices best practices] for an HTML interface are identified in the [https://developers.google.com/apps-script/guides/html/best-practices HTML Services] section of the Apps Script developers site.
   # *Server Service Wrapper* - The Server Service Wrapper presents three external interfaces; the GWT RPC which supports Client Wrapper API based communication with the Server Service Wrapper, Google Cloud Endpoints which provides a RESTful JSON based API to the configuration clients, and the HTML based user interface must adhere to the following [http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNon-functional_requirements&sa=D&sntz=1&usg=AFQjCNEfqIIqXPh9ybJpirov_fASn23HgA non functional] requirements.
     # *Respect information items, landing pages, pages and sites configuration attributes*
-    # *Generate accurate and relavant sitemap.xml data on demand*
+    # *Generate accurate and relevant sitemap.xml data on demand*
     # *Generate GWT Host Page for all configured pages and landing pages*
     # *The Site must deploy to the Google App Engine application id specified for the attribute “App Engine Application ID” for the currently authenticated Google ID*
     # *The Site must deploy to the Google App Engine application id version for the attribute “App Engine Application Version” for the currently authenticated Google ID*
