@@ -1,4 +1,4 @@
-#summary A list of the parts of this wiki organized in the order in which the parts appear.
+#summary A listing of the parts of this wiki organized in the order in which the parts appear.
 
 = Contents =
 
