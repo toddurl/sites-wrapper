@@ -14,4 +14,4 @@ For example, the title of the use case shall be used as the title of the corresp
 
 In the case that new language is required or created as part of any other deliverable, that language shall be back ported and incorporated into the corresponding use case so that the usage of the language is once again consistent across the deliverables associated with the SDLC.
 
-For example, if a unique identifier is created for a test case, that unique identifier (_i.e._; test case id) shall be incorporated into the language of the corresponding use case and used were and if required in the corresponding test script, test suite and test summary report.
+For example, if a unique identifier is created as part of writing a test case, that unique identifier (_i.e._; test case id) shall be incorporated into the language of the corresponding use case and used were and if required in the corresponding test script, test suite and test summary report.
