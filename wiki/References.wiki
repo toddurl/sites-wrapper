@@ -8,3 +8,4 @@
   # [http://developer.android.com/google/index.html Android] - Develop a mobile backend using custom code with Google Cloud Endpoints.
   # [http://developers.google.com/apps-script/ Apps Script] - Build an add-on for Google Apps Sheet.
   # [http://developer.apple.com/library/ios/navigation/#section=Resource%20Types&topic=Guides iOS] - Apple's developer guides include overviews, tutorials, programming guides, and, for developer tools, user guides.
+  # [https://cloud.google.com/ Google Cloud Platform] - Google Cloud Platform is a portfolio of cloud computing products by Google, that is offering hosting on the same supporting infrastructure that Google uses internally for end-user products like Google Search and YouTube
