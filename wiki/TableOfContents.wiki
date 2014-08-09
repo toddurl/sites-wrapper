@@ -30,3 +30,4 @@
     * [UserInterfaces User Interfaces]
     * [HardwareInterfaces Hardware Interfaces]
     * [SoftwareInterfaces Software Interfaces]
+    * [CommunicationInterfaces Communication Interfaces]
