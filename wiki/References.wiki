@@ -5,5 +5,5 @@
   # [http://developers.google.com/appengine/ Google App Engine] - Google App Engine is a Platform as a Service (PaaS) offering that lets you build and run applications on Google’s infrastructure.
   # [http://developer.android.com/google/index.html Android] - Develop a mobile backend using custom code with Google Cloud Endpoints.
   # [http://developers.google.com/apps-script/ Apps Script] - Build an add-on for Google Apps Sheet.
-  # [https://developer.apple.com/library/ios/navigation/#section=Resource%20Types&topic=Guides iOS] - Apple's developer guides include overviews, tutorials, programming guides, and, for developer tools, user guides.
+  # [http://developer.apple.com/library/ios/navigation/#section=Resource%20Types&topic=Guides iOS] - Apple's developer guides include overviews, tutorials, programming guides, and, for developer tools, user guides.
   # [http://www.gwtproject.org/ Google Web Toolkit] - GWT is a development toolkit for building and optimizing complex browser-based applications.
