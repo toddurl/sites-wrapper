@@ -1,0 +1,15 @@
+#summary Identification and detailed description of each software interface associated with SitesWrapper
+
+= Software Interfaces =
+
+  # *Server Service Wrapper* is deployed as an Google App Engine instance and makes use of the following software interfaces:
+    * [http://java.sun.com/products/servlet/ Java Servlets API]
+    * [https://developers.google.com/appengine/docs/java/datastore/ App Engine Scalable Datastore]
+    * [https://developers.google.com/appengine/docs/java/oauth/ Java OAuth API]
+    * [http://java.sun.com/developer/technicalArticles/J2EE/jpa/ Java Persistence API]
+    * [https://developers.google.com/appengine/docs/java/endpoints/ Google Cloud Endpoints]
+  # *Client Wrapper*, a Google Web Toolkit module makes use of the following software interfaces:
+    * [http://www.gwtproject.org/doc/latest/DevGuideServerCommunication.html#DevGuideRemoteProcedureCalls GWT RPC libraries]
+    * [http://www.gwtproject.org/javadoc/latest/com/google/gwt/i18n/client/Dictionary.html Dictionary]
+  # *Android Configuration Client* The Android Configuration Client makes use of the following software interfaces:
+    * [http://android-developers.blogspot.com/2013/06/adding-backend-to-your-app-in-android.html Cloud Endpoint Client Libraries]
