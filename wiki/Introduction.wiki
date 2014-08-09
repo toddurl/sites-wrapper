@@ -1,4 +1,4 @@
-#summary Describes this Wiki as a Software Requirements Specification
+#summary The SitesWrapper Software Requirements Specification
 
 = Introduction =
 
