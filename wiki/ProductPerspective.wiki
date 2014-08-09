@@ -2,4 +2,12 @@
 
 = Product Perspective =
 
-SitesWrapper is composed of five distinct software components. Two of the components, the server service wrapper and the client wrapper share a common source tree and are maintained as part of the same eclipse project, SitesWrapper-AppEngine-GWT. The other three items, which are maintained and distributed separately, are the Android, iOS and Apps Script based configuration clients; SitesWrapper-Android, SitesWrapper-iOS and SitesWrapper-AppsScript respectively.
+SitesWrapper is composed of five distinct software components. Two of the components, the *server service wrapper* and the *client wrapper* share a common source tree and are maintained as part of the same eclipse project,
+
+  * SitesWrapper-AppEngine-GWT.
+
+The other three items, which are maintained and distributed separately, are the *Android*, *iOS* and *Apps Script* based configuration clients;
+
+  * SitesWrapper-Android
+  * SitesWrapper-iOS
+  * SitesWrapper-AppsScript respectively.
