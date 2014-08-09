@@ -1,4 +1,4 @@
-#summary Identifies the interfaces associated with SitesWrapper.
+#summary Identifies the system wide interfaces associated with SitesWrapper.
 
 = System Interfaces =
 
