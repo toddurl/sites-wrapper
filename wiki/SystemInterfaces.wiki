@@ -1,0 +1,13 @@
+#summary Identifies the interfaces associated with SitesWrapper.
+
+= System Interfaces =
+
+Describing SitesWrapper’s system interfaces from a product perspective reveals the following primary interfaces.
+
+  # Android Configuration Client to Server Service Wrapper
+  # iOS Configuration Client to Server Service Wrapper
+  # AppScript Configuration Client to Server Service Wrapper
+  # End user web browser to Server Service Wrapper
+  # Client Wrapper to Server Service Wrapper
+  # Server Service Wrapper to Android Configuration Client
+  # Android Configuration Client to Wear Alert Handler
