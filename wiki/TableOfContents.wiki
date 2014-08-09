@@ -55,3 +55,4 @@
         # [ExternalInterfaceRequirements Must render a completely functional site based on the contents of the configuration datastore regardless of the configured look and feel]
         # [ExternalInterfaceRequirements The Site must adhere to the value specified for the attribute “Site Name"]
         # [ExternalInterfaceRequirements The Site must deploy to the Google App Engine]
+    * [FunctionalRequirements Functional Requirements]
