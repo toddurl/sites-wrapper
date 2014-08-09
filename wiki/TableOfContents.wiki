@@ -20,4 +20,7 @@
       * [References Google Cloud Platform]
   * [OverallDescription Overall Description]
     * [ProductPerspective Product Perspective]
-      # [SitesWrapper_AppEngine_GWT SitesWrapper-AppEngine-GWT]
+      # [ProductPerspective SitesWrapper-AppEngine-GWT]
+      # [ProductPerspective SitesWrapper-Android]
+      # [ProductPerspective SitesWrapper-iOS]
+      # [ProductPerspective SitesWrapper-Apps-Script]
