@@ -2,8 +2,4 @@
 
 = Memory Constraints =
 
-SitesWrapper is not expected to place excessive demands on system memory and is expected to behave appropriately on a per platform basis memory management systems indicate memory is unavailable. For example, Android sets a hard limit on the heap size for each app.
-
-The exact heap size limit varies between devices based on how much RAM the device has available overall.
-
-If your app has reached the heap capacity and tries to allocate more memory, it will receive an OutOfMemoryError.
+SitesWrapper is not expected to place excessive demands on system memory and is expected to behave appropriately on a per platform basis memory management systems indicate memory is unavailable. For example, Android sets a hard limit on the heap size for each app. The exact heap size limit varies between devices based on how much RAM the device has available overall. If your app has reached the heap capacity and tries to allocate more memory, it will receive an OutOfMemoryError.
