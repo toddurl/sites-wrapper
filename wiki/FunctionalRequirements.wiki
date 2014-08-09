@@ -2,9 +2,11 @@
 
 = Functional Requirements =
 
-This section of the wiki identifies the [http://en.wikipedia.org/wiki/Functional_requirement functional requirements] of SitesWrapper, which for the most part comprises [http://en.wikipedia.org/wiki/Use_case use cases] associated with each of the various components of SitesWrapper; the Android Configuration Client, the iOS Configuration Client, the Apps Script Configuration Client, the Server Service Wrapper and the Client Wrapper.
+This section of the wiki identifies the [http://en.wikipedia.org/wiki/Functional_requirement functional requirements] of SitesWrapper, which for the most part, comprises the [http://en.wikipedia.org/wiki/Use_case use cases] associated with each of the various components of SitesWrapper; the *Android Configuration Client*, the *iOS Configuration Client*, the *Apps Script Configuration Client*, the *Server Service Wrapper* and the *Client Wrapper*.
 
-Use cases defined in each subsection shall have a corresponding one to one relationship with every functional [http://en.wikipedia.org/wiki/Test_Case test case], each of which shall be [http://en.wikipedia.org/wiki/Test_script scripted] and grouped together forming a [http://en.wikipedia.org/wiki/Test_suite test suite] covering the functionality of the associated component of SitesWrapper.
+The use cases, grouped together in subsections of this section of the wiki, shall have a one to one relationship with a corresponding functional [http://en.wikipedia.org/wiki/Test_Case test case], each of which shall be [http://en.wikipedia.org/wiki/Test_script scripted] and grouped to form a [http://en.wikipedia.org/wiki/Test_suite test suite] covering the functionality of the associated component of SitesWrapper.
+
+For example, the use cases identified in the Android Configuration Client subsection of the Functional Requirements section of this wiki shall be translated directly into functional test cases covering the functionality of the Android Configuration Client, scripted using UiAutomator and grouped into a test suite in order to facilitate automated test execution and test reporting. 
 
 == Language ==
 
