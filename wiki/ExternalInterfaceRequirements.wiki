@@ -3,3 +3,7 @@
 = External Interface Requirements =
 
 Requirements placed on the external interfaces of the system are consistent with the character of the respective component.
+
+== Android Configuration Client ==
+
+Android provides a framework for creating user interfaces which is documented in the [http://developer.android.com/training/best-ui.html Best Practices for User Interfaces] section of the Android developers website. This section, as well as all other “best practices” identified for Android programs will be adhered to.
