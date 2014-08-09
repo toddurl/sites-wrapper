@@ -32,3 +32,4 @@
     * [SoftwareInterfaces Software Interfaces]
     * [CommunicationInterfaces Communication Interfaces]
     * [MemoryConstraints Memory Constraints]
+    * [Operations Operations]
