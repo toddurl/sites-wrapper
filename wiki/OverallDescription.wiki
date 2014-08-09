@@ -4,4 +4,4 @@
 
 What makes SitesWrapper different is that the overall look and feel of the presentation interface can be changed to match some of the webs most popular sites without affecting the content or functionality. The content on the other hand, which is generated using Google Apps and deployed as a collection of Google Sites, gets “wrapped” and presented homogeneously as a SitesWrapper site. The configuration of a SitesWrapper site (as opposed to the content), is dictated by the application data model which is maintained as a collection of persistent objects in the Google App Engine Datastore and updated by the individual configuration clients via Google Cloud Messaging.
 
-[https://www.linkedin.com/profile/view?id=50532854 https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/Architecture.png]
+[https://www.linkedin.com/profile/view?id=50532854 http://googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/SitesWrapperArchitecture1.png]
