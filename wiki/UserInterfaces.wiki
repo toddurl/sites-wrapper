@@ -3,8 +3,8 @@
 = User Interfaces =
 
 From an overall distributed product perspective, SitesWrapper provides the following user interfaces.
-  # *Server Service Wrapper* HTML only web page based end user interface
-  # *Client Wrapper* AJAX style web page based end user interface
-  # *Android Configuration Client* provides an Android app preferences API style end user interface that’s consistent with the end user experience in other Android apps including the system settings
-  # *iOS Configuration Client* uses the Cocoa preferences system (aka, the user defaults system) to provide an interface that's consistent with the user experience in other iOS apps
-  # *Apps Script Configuration Client* uses a Google Apps spreadsheet based user interface
+  # *Server Service Wrapper* _HTML_ only web page based end user interface
+  # *Client Wrapper* _AJAX_ style web page based end user interface
+  # *Android Configuration Client* provides an _Android app preferences API_ style end user interface that’s consistent with the end user experience in other Android apps including the system settings
+  # *iOS Configuration Client* uses the _Cocoa preferences system_ (aka, the user defaults system) to provide an interface that's consistent with the user experience in other iOS apps
+  # *Apps Script Configuration Client* uses a Google Apps _spreadsheet_ based user interface
