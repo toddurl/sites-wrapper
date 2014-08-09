@@ -1,4 +1,4 @@
-#summary Describes SitesWrapper from a product perspective
+#summary Describes SitesWrapper from a component product perspective
 
 = Product Perspective =
 
