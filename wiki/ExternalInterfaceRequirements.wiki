@@ -4,6 +4,16 @@
 
 Requirements placed on the external interfaces of the system are consistent with the character of the respective component.
 
-== Android Configuration Client ==
-
-Android provides a framework for creating user interfaces which is documented in the [http://developer.android.com/training/best-ui.html Best Practices for User Interfaces] section of the Android developers website. This section, as well as all other “best practices” identified for Android programs will be adhered to.
+  # *Android Configuration Client* - Android provides a framework for creating user interfaces which is documented in the [http://developer.android.com/training/best-ui.html Best Practices for User Interfaces] section of the Android developers website. This section, as well as all other “best practices” identified for Android programs will be adhered to.
+  # *iOS Configuration Client* - Likewise, all [https://developer.apple.com/videos/wwdc/2013/?id=225 Best Practices for iOS user experiences] will be adhered to.
+  # *Apps Script Configuration Client* - In the case of the AppScript Configuration client, [https://developers.google.com/apps-script/guides/html/best-practices best practices] for an HTML interface are identified in the [https://developers.google.com/apps-script/guides/html/best-practices HTML Services] section of the Apps Script developers site.
+  # *Server Service Wrapper* - The Server Service Wrapper presents three external interfaces; the GWT RPC which supports Client Wrapper API based communication with the Server Service Wrapper, Google Cloud Endpoints which provides a RESTful JSON based API to the configuration clients, and the HTML based user interface must adhere to the following [http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNon-functional_requirements&sa=D&sntz=1&usg=AFQjCNEfqIIqXPh9ybJpirov_fASn23HgA non functional] requirements.
+    # *Respect information items, landing pages, pages and sites configuration attributes*
+    # *Generate accurate and relavant sitemap.xml data on demand*
+    # *Generate GWT Host Page for all configured pages and landing pages*
+    # *The Site must deploy to the Google App Engine application id specified for the attribute “App Engine Application ID” for the currently authenticated Google ID*
+    # *The Site must deploy to the Google App Engine application id version for the attribute “App Engine Application Version” for the currently authenticated Google ID*
+  # *Client Wrapper* - The external interface of the Client Wrapper represents the [http://en.wikipedia.org/wiki/Web_application web application] feature functionality of SitesWrapper and must adhere to the following [http://en.wikipedia.org/wiki/Non-functional_requirements non-functional] requirements.
+    # *Must render a completely functional site based on the contents of the configuration datastore regardless of the configured look and feel*
+    # *The Site must adhere to the value specified for the attribute “Site Name”*
+    # *The Site must deploy to the Google App Engine*
