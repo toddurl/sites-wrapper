@@ -1,0 +1,3 @@
+#summary TODO - Characteristics of the system from a users perspective.
+
+= User Characteristics =
