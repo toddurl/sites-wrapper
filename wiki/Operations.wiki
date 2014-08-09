@@ -2,7 +2,7 @@
 
 = Operations =
 
-SitesWrapper operations are handled via the Google [https://appengine.google.com/ AppEngine Admin Console]. 
+SitesWrapper operations are handled via the Google [https://appengine.google.com/ App Engine Admin Console]. 
 
 The App Engine Admin Console gives you complete access to the Server Service Wrapper. Access to the Console is provided by visiting the following link in your web browser and signing in with your Google account: https://appengine.google.com/
 
