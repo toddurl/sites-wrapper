@@ -1,0 +1,5 @@
+#summary Functional Requirements of the Android Configuration Client.
+
+= Android Configuration Client Functional Requirements =
+
+*TBD*
