@@ -42,4 +42,4 @@
     * [ConstraintsAssumptionsAndDependencies Constraints Assumptions and Dependencies]
   * [SpecificRequirements Specific Requirements]
     * [ExternalInterfaceRequirements External Interface Requirements]
-      # [AndroidConfigurationClient Android Configuration Client]
+      # [ExternalInterfaceRequirements Android Configuration Client]
