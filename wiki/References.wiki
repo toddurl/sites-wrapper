@@ -11,3 +11,4 @@
   # [https://cloud.google.com/ Google Cloud Platform] - Google Cloud Platform is a portfolio of cloud computing products by Google, that is offering hosting on the same supporting infrastructure that Google uses internally for end-user products like Google Search and YouTube.
   # [https://code.google.com/ Project Hosting] on Google Code, a free collaborative development environment for open source projects.
   # [http://hudson-ci.org/ Hudson] Extensible Continuous Integration Server.
+  # [http://en.wikipedia.org/wiki/Data_model Application Data Model]
