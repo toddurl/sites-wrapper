@@ -1,0 +1,5 @@
+#summary Requirements placed on the external interfaces.
+
+= External Interface Requirements =
+
+Requirements placed on the external interfaces of the system are consistent with the character of the respective component.
