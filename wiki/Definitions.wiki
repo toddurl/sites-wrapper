@@ -9,3 +9,5 @@
     * A URL referenceable resource. An information item of any type may reside anywhere in the internet. However, an information item’s attributes are defined via a configuration client and stored as a persistent object in the Google Datastore.
   # con·fig·u·ra·tion cli·ent (kən-fĭg′yə-rā′shən) (klī′ənt)
     * A platform specific software item which reflects, and is used to maintain, the state of the configuration Entity objects in the Google Datastore via Google Cloud Endpoints.
+  # SEO
+    * SEO (Search engine optimization) is the process of affecting the visibility of a website or a web page in a search engine's "natural" or un-paid ("organic") search results.
