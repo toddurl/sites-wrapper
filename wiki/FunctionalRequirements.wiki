@@ -12,7 +12,7 @@ For example, the use cases identified in the Android Configuration Client subsec
 
 The language used in each use case of each functional requirement for each subsection of this section shall be definitive, and dictate the language used for each deliverable associated with the [http://en.wikipedia.org/wiki/Software_development_process Software Development Lifecycle] of SitesWrapper including, but not limited to, test cases, test scripts, test suites and test summary reports.
 
-For example, the title of the use case shall be used as the title of the corresponding test case as well as the title of the corresponding test script, and shall be used to identify the use case within the corresponding test suite as well as the test summary report.
+For example, the title of the use case shall be used as the title of the corresponding test case as well as the title of the corresponding test script, and shall be used to identify the test case within the corresponding test suite as well as the test summary report.
 
 In the case that new language is required or created as part of any other deliverable, that language shall be back ported and incorporated into the corresponding use case so that the usage of the language is once again consistent across the deliverables associated with the SDLC.
 
