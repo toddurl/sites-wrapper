@@ -1,0 +1,15 @@
+#summary Identifies all specific requirements.
+
+= Specific Requirements =
+
+This section of the wiki identifies all requirements which can be verified and form the basis for *Acceptance Testing*.
+
+All development work should be able to have its requirements traced back to this section, as it is the definitive source of the following types of requirements:
+
+  * External Interface Requirements
+  * Functional Requirements
+  * Performance Requirements
+  * Design Constraints
+  * Logical Database Requirements (The *Application Data Model*)
+  * Software System Attributes
+  * Other Requirements
