@@ -1,4 +1,6 @@
-= Table Of Contents =
+#summary A list of the parts of this wiki organized in the order in which the parts appear.
+
+= Contents =
 
   * [Introduction Introduction]
     * [Purpose Purpose]
