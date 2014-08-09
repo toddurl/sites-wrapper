@@ -1,0 +1,8 @@
+#summary Identifies the functionality of each component.
+
+= Product Functions =
+
+  # *SitesWrapper-AppEngine-GWT* - Provides organizations with a “look and feel customizable” Google App Engine based web app which renders as both an AJAX as well as an HTML style web app in which each landing page can be decorated and capable of wrapping one or more Google Sites based websites.
+  # *SitesWrapper-Android* - Provides administrators the ability to configure a SitesWrapper site using an Android app available on Google Play.
+  # *SitesWrapper-iOS* - Provides administrators the ability to configure a SitesWrapper site using an iOS app available in the App Store.
+  # *SitesWrapper-Apps-Script* - Provides administrators the ability to configure a SitesWrapper site using a Google Apps spreadsheet.
