@@ -1,0 +1,5 @@
+#summary Functional Requirements of the Client Wrapper expressed as use cases.
+
+= Client Wrapper Functional Requirements =
+
+*TBD*
