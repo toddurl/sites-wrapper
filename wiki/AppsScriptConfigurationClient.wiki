@@ -1,0 +1,5 @@
+#summary Functional Requirements of the Apps Script Configuration Client expressed as use cases.
+
+= Apps Script Configuration Client Functional Requirements =
+
+*TBD*
