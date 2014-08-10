@@ -35,7 +35,16 @@
     * The URL_IS_IT LookAndFeel theme engine selected (default)
     * Black and White full screen background images for all Pages
     * 4 Pages accessible from the MainMenu of each Page
-    * 4 Google Sites accessible from the ContentMenu of each Page repeated for each Page
+    * 4 Google Sites accessible from the ContentMenu of each Page with the same 4 repeated for each Page
     * 4 Carousel style Items per Page
     * 4 Landings defined in the configuration datastore
 For the above defined configuration, the following performance metrics shall be defined, measured and attained for each release of SitesWrapper:
+  * An initial page *loading indicator* shall be displayed while the initial loading of the web application takes place, and although the actual loading of the web app may continue asynchronously, the initial Page shall be displayed and the indicator dismissed within *10 seconds*.
+  * Beginning with the ContentMenu of the initial Page, each ContentMenu Page selection (_i.e._; each Google Sites disclosure button) shall smoothly display the configured Google Sites site within *2 seconds*.
+  * At least 1 ContentMenu selection must be made while the previously selected ContentMenu disclosure is still open, causing the previous selection to automatically close prior to the current selection to be disclosed. This *inter-content-menu-transition* shall complete within *2 seconds*.
+  * At least one Carousel style Item must selected from the initial Page, and the Item must be displayed within *1 second*.
+  * At least one Carousel style Item must be dismissed from the initial Page, and the dismissal must complete within *1 second*.
+  * Subsequent to dismissal of the Carousel style information Item, the remaining 3 pages must be selected from the MainMenu and each must display completely within *2 seconds*.
+  * From the fourth Page, the first Landing shall be selected and the time required for the Landing to be displayed must not exceed *2 seconds*.
+  * After bookmarking the displayed Landing, clear the browser cache and select the bookmarked Landing. The time required for the web app to load and the Landing to be displayed must not exceed *10 seconds*.
+  * After the web app has loaded and the Landing displayed, dismiss the Landing and verify the fourth page is displayed. The time required to dismiss the Landing and display the forth Page must not exceed *1 second*.
