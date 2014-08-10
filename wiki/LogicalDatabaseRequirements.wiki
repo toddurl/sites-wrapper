@@ -40,3 +40,44 @@ A singleton which holds data intended to customize the currently selected look a
 
 ==Item==
 A collection of information items for use in decorating the web app including but limited to images, html snippets and videos.
+  * *Name* - Human friendly name of the information item.
+  * *Type* - Selection from available Item Types (e.g.; Page, Video, Html, Text).
+  * *Description* - Human reader friendly description of the of the Item, often used as a caption for example (_e.g._; The 18 SMT Standard Light Bulb LED lamp).
+  * *Video Url* - Url which references a Youtube video for an Item of Type Video.
+  * *Image Url* - Url which references a picture for Items of Type Image.
+  * *Link Name* - Name in text to display as the name of the link to the information Item (_e.g._; See spot run).
+  * *Link Url* - Url used to reference this information Item.
+
+==Landing==
+A collection of information item like objects used to generate Landing pages which exist "in addition to" the Page objects defined for the web app. Landings are URL reference-able and also "collectively listed" outside the current screen area of the web app in the web browser. In other words, the available Landings can be listed on every page of a web app in a way as not to distract from the main content of the web app and yet still be available for selection by end users as well as being able to be indexed and directed to by a search engine such as google.
+  * *Name* - Human friendly name of the information item.
+  * *Type* - Selection from available Item Types (e.g.; Page, Video, Html, Text).
+  * *Description* - Human reader friendly description of the of the Item, often used as a caption for example (_e.g._; The 18 SMT Standard Light Bulb LED lamp).
+  * *Video Url* - Url which references a Youtube video for an Item of Type Video.
+  * *Image Url* - Url which references a picture for Items of Type Image.
+  * *Link Name* - Name in text to display as the name of the link to the information Item (_e.g._; See spot run).
+  * *Link Url* - Url used to reference this information Item.
+  * *Specification* - The name portion of a collection of name/value pairs used to specify the name of a value.
+  * *Value* - The value portion of a collection of name/value pairs used to specify the value associated with a specification.
+
+==Page==
+Main pages to be displayed and selected between using the main menu (e.g.; About Us, Contact). Each Page can be decorated and populated with content specific information by specifying values for the attributes defined in this section. In addition to the main menu (used to navigate between pages), a Page may be specified to contain one or more <iframe> style disclosures or “animated sub window” which can be activated via a button or menu selection and which are configured to display “in the AJAX style” (i.e.; without refreshing the page), a Google Sites site or some other url reference-able website or web app.
+  * *Name* - Name of the page or view to be displayed by either the Client or Server Service Wrapper (_e.g._; About Us, Contact).
+  * *Show Page Title* - Yes or no, display the name as the title of the view or page.
+  * *Logo Type* - Selection from one of type image or html.
+  * *Logo Image* - Url referencing the image to be used for a page specific logo.
+  * *Logo Html* - Html to be used for a page specific logo.
+  * *Language Translation Enabled* - Boolean selection between yes and no.
+  * *Translated Languages* - A collection of language codes to make available via Google Translation.
+  * *Custom Search Enabled* - Selection of yes or no as to whether Google Custom Search should be enabled for the overall web app. (Note - Switch does not affect the Google Sites site specific settings such as search)
+  * *Custom Search Urls* - Collection of Google Custom Search urls to use when Custom Search is enabled.
+  * *Main Menu Type* - The type of menu to render for use as an inter main page main menu (_e.g._; link or button)
+  * *Main Menu Direction* - Selectable direction LTR or RTL.
+  * *Main Menu Selection Html* - Html which should be displayed in the main menu when this page is not being displayed (_i.e._; *not selected*).
+  * *Main Menu Selected Html* - Html which should be displayed in the main menu when this page is being displayed (_i.e._; *selected*).
+  * *Background Image Urls* - Collection of image urls to be used for the background. Empty set equals no background image. A collection size of 1 equals background image, and greater than 1 equals carousel.
+  * *Background Image Duration* - Duration to display background image in carousel.
+  * *Content Menu Item Name* - The Name displayed for the Item entry in the Content Menu. Unique to each page is a Content Menu, which provides access to a collection of `<iframe>` style disclosures or “animated sub-windows” which can be activated via a button in the Content Menu, which is configured to display or disclose AJAX style (_i.e._; without refreshing the page), a Google Sites site or some other url reference-able website or web app.
+  * *Content Menu Item Link* - The Link used to access an Item entry in the Content Menu. The Content Menu, which is unique for each Page, provides sub menu style access to a collection of `<iframe>` style disclosures or “animated sub windows” which are activated by clicking a button in the Content Menu which discloses a Google Sites site or some other url reference able website or web app.
+  * *Content Menu Style Sheet* - Url which points to a stylesheet used to style the Content Menu.
+  * *Content Layout* - Layout style which the content of a page adheres to. In the initial release, “Left Sidebar” will be supported, although the selection control should indicate other intended future selection options as indicated below. [https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/ContentLayout.png]
