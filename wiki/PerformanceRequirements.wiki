@@ -10,3 +10,12 @@
     # Creation of new "Landing" objects must not take more than 1 second.
     # Creation of new "Page" objects must not take more than 1 second.
     # Syncing or updating the Server Service resident configuration of SitesWrapper from the Android Configuration Client *shall be non-blocking* and execute asynchronously as an [http://developer.android.com/reference/android/os/AsyncTask.html AsyncTask].
+
+  * *iOS Configuration Client* - Must be smooth, responsive, use as little battery as possible. In general, the iOS client software must follow the practices identified in the [https://developer.apple.com/library/ios/documentation/Performance/Conceptual/PerformanceOverview/Introduction/Introduction.html Developing for Performance Overview] and the [https://developer.apple.com/library/ios/documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html Performance Tuning] section of the iOS App Programming Guide. The following specific requirements must be verified on a continuous basis as a consequence of testing the Functional requirements identified in the iOS Configuration Client section of the Functional Requirements section of this wiki and must be included in the Test Summary Report for each release of SitesWrapper.
+    # All view swipes and transitions must be smooth and non-blocking.
+    # Application launch time from the device powered off state, or initial launch state to power up must not take more that 5 seconds. In other words, "it must not take more than 5 seconds for the app to restore the contents of all the fields for all the forms from the persisted values from the state in which the device has previously been powered off.
+    # All values must be persisted to a iOS settings bundle upon completion of the editing process, and this persistence must not take more than 1 second.
+    # Creation of new *Item* objects must not take more than 1 second.
+    # Creation of new "Landing" objects must not take more than 1 second.
+    # Creation of new "Page" objects must not take more than 1 second.
+    # Syncing or updating the Server Service resident configuration of SitesWrapper from the iOS Configuration Client *shall be non-blocking* and execute asynchronously as a thread or some other appropriate concurrent programming paradime as defined in the [http://developer.apple.com/library/ios/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091-CH1-SW1 Concurrency Programming Giude].
