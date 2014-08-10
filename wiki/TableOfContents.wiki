@@ -55,4 +55,4 @@
       # [ClientWrapper Client Wrapper]
     * [PerformanceRequirements Performance Requirements]
     * [DesignConstraints Design Constraints]
-    * [LogicalDatabaseRequirements Logical Database Requirements]
+    * [LogicalDatabaseRequirements Logical Database Requirements (Object Model)]
