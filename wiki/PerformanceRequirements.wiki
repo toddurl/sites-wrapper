@@ -3,21 +3,21 @@
 = Performance Requirements =
 
   * *Android Configuration Client* - Must be smooth, responsive, use as little battery as possible. In general, the client software must follow the practices identified in the [http://developer.android.com/training/best-performance.html Best Practices for Performance] section of the Android developers guide. The following specific requirements must be verified on a continuous basis as a consequence of testing the Functional requirements identified in the Android Configuration Client section of the Functional Requirements section of this wiki and must be included in the Test Summary Report for each release of SitesWrapper.
-    # All view swipes must be smooth and non-blocking.
-    # Application launch time from the device powered off state, or initial launch state to power up must not take more that 5 seconds. That is from onCreate() to onResumed(). In other words, "it must not take more than 5 seconds for the app to restore the contents of all the fields for all the forms from the persistent values in the preference bundles from the state in which the device has previously been powered off.
-    # All TextView values must be persisted to a Preference Bundle upon completion of the editing process, and this persistence must not take more than 1 second.
-    # Creation of new *Item* objects must not take more than 1 second.
-    # Creation of new *Landing* objects must not take more than 1 second.
-    # Creation of new *Page* objects must not take more than 1 second.
-    # Syncing or updating the Server Service resident configuration of SitesWrapper from the Android Configuration Client *shall be non-blocking* and execute asynchronously as an [http://developer.android.com/reference/android/os/AsyncTask.html AsyncTask].
+    * All view swipes must be smooth and non-blocking.
+    * Application launch time from the device powered off state, or initial launch state to power up must not take more that 5 seconds. That is from onCreate() to onResumed(). In other words, "it must not take more than 5 seconds for the app to restore the contents of all the fields for all the forms from the persistent values in the preference bundles from the state in which the device has previously been powered off.
+    * All TextView values must be persisted to a Preference Bundle upon completion of the editing process, and this persistence must not take more than 1 second.
+    * Creation of new *Item* objects must not take more than 1 second.
+    * Creation of new *Landing* objects must not take more than 1 second.
+    * Creation of new *Page* objects must not take more than 1 second.
+    * Syncing or updating the Server Service resident configuration of SitesWrapper from the Android Configuration Client *shall be non-blocking* and execute asynchronously as an [http://developer.android.com/reference/android/os/AsyncTask.html AsyncTask].
 
   * *iOS Configuration Client* - Must be smooth, responsive, use as little battery as possible. In general, the iOS client software must follow the practices identified in the [https://developer.apple.com/library/ios/documentation/Performance/Conceptual/PerformanceOverview/Introduction/Introduction.html Developing for Performance Overview] and the [https://developer.apple.com/library/ios/documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html Performance Tuning] section of the iOS App Programming Guide. The following specific requirements must be verified on a continuous basis as a consequence of testing the Functional requirements identified in the iOS Configuration Client section of the Functional Requirements section of this wiki and must be included in the Test Summary Report for each release of SitesWrapper.
-    # All view swipes and transitions must be smooth and non-blocking.
-    # Application launch time from the device powered off state, or initial launch state to power up must not take more that 5 seconds. In other words, "it must not take more than 5 seconds for the app to restore the contents of all the fields for all the forms from the persisted values from the state in which the device has previously been powered off.
-    # All values must be persisted to a iOS settings bundle upon completion of the editing process, and this persistence must not take more than 1 second.
-    # Creation of new *Item* objects must not take more than 1 second.
-    # Creation of new *Landing* objects must not take more than 1 second.
-    # Creation of new *Page* objects must not take more than 1 second.
+    * All view swipes and transitions must be smooth and non-blocking.
+    * Application launch time from the device powered off state, or initial launch state to power up must not take more that 5 seconds. In other words, "it must not take more than 5 seconds for the app to restore the contents of all the fields for all the forms from the persisted values from the state in which the device has previously been powered off.
+    * All values must be persisted to a iOS settings bundle upon completion of the editing process, and this persistence must not take more than 1 second.
+    * Creation of new *Item* objects must not take more than 1 second.
+    * Creation of new *Landing* objects must not take more than 1 second.
+    * Creation of new *Page* objects must not take more than 1 second.
     # Syncing or updating the Server Service resident configuration of SitesWrapper from the iOS Configuration Client *shall be non-blocking* and execute asynchronously as a thread or some other appropriate concurrent programming paradime as defined in the [http://developer.apple.com/library/ios/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091-CH1-SW1 Concurrency Programming Giude].
 
   * *Apps Script Configuration Client* - As a [https://developers.google.com/apps-script/ container bound Add-On], the Apps Script Configuration Client is heavily dependent on the performance of Google Sheets, and it's hard to imagine having a performance problem associated with the actual editing of the configuration values as well as creating new Item, Landing and Page sheets. Collecting up and bundling the values as JSON objects to be submitted via the UrlFetchApp service is a different matter, as the Apps Script component itself, as well as the UrlFetchApp service does not run asynchronously.
@@ -32,4 +32,10 @@
       * 8 seconds when 100 Landings are defined in the datastore and 4 Sites are wrapped in the Page.
 
   * *Client Wrapper* - It is anticipated that the performance Client Wrapper, which as an AJAX web app intended for end user consumption on mobile, tablet and desktop clients, will be heavily dependent on both the configured "Look and feel" theme as well as the Site/Page configuration (e.g.; selection of background image to be displayed on a Page as well as the number of Landings to be rendered as part of the page). Consequently, performance metrics will only be defined, measured and achieved for the base/demo configuration which will consist of;
-    * 
+    * The URL_IS_IT LookAndFeel theme engine selected (default)
+    * Black and White full screen background images for all Pages
+    * 4 Pages accessible from the MainMenu of each Page
+    * 4 Google Sites accessible from the ContentMenu of each Page repeated for each Page
+    * 4 Carousel style Items per Page
+    * 4 Landings defined in the configuration datastore
+For the above defined configuration, the following performance metrics shall be defined, measured and attained for each release of SitesWrapper:
