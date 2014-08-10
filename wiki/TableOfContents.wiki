@@ -54,3 +54,5 @@
       # [ServerServiceWrapper Server Service Wrapper]
       # [ClientWrapper Client Wrapper]
     * [PerformanceRequirements Performance Requirements]
+    * [DesignConstraints Design Constraints]
+    * [LogicalDatabaseRequirements Logical Database Requirements]
