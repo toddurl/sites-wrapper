@@ -8,16 +8,17 @@ The Google App Engine Datastore shall persist the following objects which repres
 
 ==Site==
 A singleton which holds the following global data relevant to the current configuration of the web app.
-    * *Name* - Holds the name to be used throughout the site. For example, it could be the name of a company, organization or person the site represents.
-    * *Application ID* - Holds the [https://developers.google.com/appengine/docs/adminconsole/ Google App Engine application id] to which the site should be deployed. See the App Engine dashboard and documentation for more information.
-    * *Application Version* - Holds the Google App Engine application id version number which the site should be deployed as. See the App Engine dashboard and documentation for more information.
-    * *Look And Feel* - Selects a look and feel from a list of available themes.
-    * *Google Web Fonts Url* - Holds the value to have specified in the host page to make use of Google Web Fonts (e.g.; `http://fonts.googleapis.com/css?family=Aldrich|Raleway:100|Open+Sans:300,400`).
-    * *Favicon Url* - Holds the url for specifying the web app's favicon (e.g.; `http://ghostgames.com/favicon.ico`).
-    * *Apple Touch Icon* - Holds the url which specifies the Apple Touch Icon to use for the web app (e.g.; `http://ssl.gstatic.com/sites/p/fff931/system/app/images/apple-touch-icon.png`).
-    * *Default Page* - Selects the page to be used as the default from the list of available pages (e.g.; About Us).
-    * *Landing Display Style* - Select from the list of available styles of use when generating landing pages (i.e.; Bottom, None).
-    * *Revision History Enabled* - Selectable between “yes” and “no”.
-    * *Logo Type* - Selectable between “image” and “html”.
-    * *Logo Image* - Holds the url which specifies a site wide logo image to use when Logo Type is equal to image (e.g.; `http://ngm.com/125/flashback-firsts/img/05-flashback-125-machu-picchu.jpg`).
-    * *Logo Html* - Holds the html to be used as a system wide logo when Logo Type is equal to html (e.g.; `<h1><span style='font-family:Aldrich,arial,sans-serif;font-style:italic;font-weight:normal'><font color=#ffffff>The</font><font color=#00ff00>Green</font><font color=#ffffff>URL</font></span><sup><font color=#ffffff size=2>&reg;</font></sup></h1>`).
+  * *Name* - Holds the name to be used throughout the site. For example, it could be the name of a company, organization or person the site represents.
+  * *Application ID* - Holds the [https://developers.google.com/appengine/docs/adminconsole/ Google App Engine application id] to which the site should be deployed. See the App Engine dashboard and documentation for more information.
+  * *Application Version* - Holds the Google App Engine application id version number which the site should be deployed as. See the App Engine dashboard and documentation for more information.
+  * *Look And Feel* - Selects a look and feel from a list of available themes.
+  * *Google Web Fonts Url* - Holds the value to have specified in the host page to make use of Google Web Fonts (e.g.; `http://fonts.googleapis.com/css?family=Aldrich|Raleway:100|Open+Sans:300,400`).
+  * *Favicon Url* - Holds the url for specifying the web app's favicon (e.g.; `http://ghostgames.com/favicon.ico`).
+  * *Apple Touch Icon* - Holds the url which specifies the Apple Touch Icon to use for the web app (e.g.; `http://ssl.gstatic.com/sites/p/fff931/system/app/images/apple-touch-icon.png`).
+  * *Default Page* - Selects the page to be used as the default from the list of available pages (e.g.; About Us).
+  * *Landing Display Style* - Select from the list of available styles of use when generating landing pages (i.e.; Bottom, None).
+  * *Revision History Enabled* - Selectable between “yes” and “no”.
+  * *Logo Type* - Selectable between “image” and “html”.
+  * *Logo Image* - Holds the url which specifies a site wide logo image to use when Logo Type is equal to image (e.g.; `http://ngm.com/125/flashback-firsts/img/05-flashback-125-machu-picchu.jpg`).
+  * *Logo Html* - Holds the html to be used as a system wide logo when Logo Type is equal to html (e.g.; `<h1><span style='font-family:Aldrich,arial,sans-serif;font-style:italic;font-weight:normal'><font color=#ffffff>The</font><font color=#00ff00>Green</font><font color=#ffffff>URL</font></span><sup><font color=#ffffff size=2>&reg;</font></sup></h1>`).
+  * *Footer Html* - Holds the html to be used as the web app's footer (e.g.; `<p><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://toddurl.appspot.com">URL IS/IT</a></b></p>`).
