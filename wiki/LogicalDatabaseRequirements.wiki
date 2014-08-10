@@ -2,12 +2,12 @@
 
 = Logical Database Requirements =
 
-The Google App Engine Datastore shall persist the following objects which represent the SitesWrapper Application Data Model.
+The Google App Engine Datastore shall persist the following objects which represent the SitesWrapper Application Data Model (_i.e._: The Object Model).
 
 [https://www.linkedin.com/profile/view?id=50532854 https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/SitesWrapper_Application_Data_Model.png]
 
 ==Site==
-A singleton which holds the following global data relevant to the current configuration of the web app.
+A singleton which holds the following global data relevant to the current configuration of the entire web app.
   * *Name* - Holds the name to be used throughout the site. For example, it could be the name of a company, organization or person the site represents.
   * *Application ID* - Holds the [https://developers.google.com/appengine/docs/adminconsole/ Google App Engine application id] to which the site should be deployed. See the App Engine dashboard and documentation for more information.
   * *Application Version* - Holds the Google App Engine application id version number which the site should be deployed as. See the App Engine dashboard and documentation for more information.
@@ -22,3 +22,21 @@ A singleton which holds the following global data relevant to the current config
   * *Logo Image* - Holds the url which specifies a site wide logo image to use when Logo Type is equal to image (e.g.; `http://ngm.com/125/flashback-firsts/img/05-flashback-125-machu-picchu.jpg`).
   * *Logo Html* - Holds the html to be used as a system wide logo when Logo Type is equal to html (e.g.; `<h1><span style='font-family:Aldrich,arial,sans-serif;font-style:italic;font-weight:normal'><font color=#ffffff>The</font><font color=#00ff00>Green</font><font color=#ffffff>URL</font></span><sup><font color=#ffffff size=2>&reg;</font></sup></h1>`).
   * *Footer Html* - Holds the html to be used as the web app's footer (e.g.; `<p><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://toddurl.appspot.com">URL IS/IT</a></b></p>`).
+  * *RPC Error Message* - Text message to display in case of RPC failure (e.g.; Network Error - Check your network connection).
+
+==Style==
+A singleton which holds data intended to customize the currently selected look and feel. The exact definition of each member is defined by LookAndFeel theme engine developer and is not necessarily consistent or applicable across all available themes.
+  * *Look And Feel* - Specifies the Look And Feel the Style entry should be applied to (i.e.; must be one of the values available for selection for the Look And Feel member of Site). (_e.g._; URL IS/IT)
+  * *Description* - A description of the Look And Feel specified in the Look And Field member of the Style object (_e.g._; Reminiscent of `www.usa.lighting.philips.com`).
+  * *Primary Color* - Html specified color to be used as the primary color for the specified Look And Feel (_e.g._; #101010).
+  * *Primary Accent Color* - Html specified value to use for accenting the primary color selected for the specified Look And Feel (_e.g._; #d6d6d6).
+  * *Secondary Accent Color* - Html specified value to use for accenting the primary color selected for the specified Look And Feel (_e.g._; #aaaaaa).
+  * *Tertiary Accent Color* - Html specified value to use for accenting the primary color selected for the specified Look And Feel (_e.g._; #eeeeee).
+  * *Main Menu Font Family*  - Google Web Font family to use for the specified Look And Feel. Must be available as specified by the Google Web Font Url member of the Site object (_e.g._; Open+Sans).
+  * *Main Menu Font Size* - Size in px to use for the font size of the main menu for the specified Look And Feel (_e.g._; 14px).
+  * *Main Menu Selection Font Color* - Html specified color to use when the main menu item is not-selected for the specified Look And Feel (_e.g._; #ffffff).
+  * *Main Menu Hover Font Color* - Html specified color to use for the main menu item when the cursor is hovering over it for the specified Look And Feel (_e.g._; #0000ff).
+  * *Main Menu Selected Font Color* - Html specified color to use when the main menu item is selected for the specified Look And Feel (_e.g._; #000cff).
+
+==Item==
+A collection of information items for use in decorating the web app including but limited to images, html snippets and videos.
