@@ -53,3 +53,4 @@
       # [AppsScriptConfigurationClient Apps Script Configuration Client]
       # [ServerServiceWrapper Server Service Wrapper]
       # [ClientWrapper Client Wrapper]
+    * [PerformanceRequirements Performance Requirements]
