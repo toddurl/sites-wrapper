@@ -1,0 +1,8 @@
+#summary Characteristic requirements of the software system.
+
+= Software System Attributes =
+== Reliability==
+==Availability==
+==Security==
+==Maintainability==
+==Portability==
