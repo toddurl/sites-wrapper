@@ -48,6 +48,7 @@
       # [ExternalInterfaceRequirements Server Service Wrapper]
       # [ExternalInterfaceRequirements Client Wrapper]
     * [FunctionalRequirements Functional Requirements]
+      # [FunctionalRequirements#Android_Configuration_Client_Functional_Requirements]
       # [AndroidConfigurationClient Android Configuration Client]
       # [iOSConfigurationClientFunctionalRequirements iOS Configuration Client]
       # [AppsScriptConfigurationClientFunctionalRequirements Apps Script Configuration Client]
