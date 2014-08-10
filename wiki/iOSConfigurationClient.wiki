@@ -1,0 +1,5 @@
+#summary Functional Requirements of the iOS Configuration Client expressed as use cases.
+
+= iOS Configuration Client Functional Requirements =
+
+*TBD*
