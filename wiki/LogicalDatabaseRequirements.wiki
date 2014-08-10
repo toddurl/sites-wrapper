@@ -6,7 +6,9 @@ The Google App Engine Datastore shall persist the following objects which repres
 
 [https://www.linkedin.com/profile/view?id=50532854 https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/SitesWrapper_Application_Data_Model.png]
 
-  * *Site* - A singleton which holds the following global data relevant to the current configuration of the web app.
+==Site==
+
+A singleton which holds the following global data relevant to the current configuration of the web app.
     * *Name* - Holds the name to be used throughout the site. For example, it could be the name of a company, organization or person the site represents.
     * *Application ID* - Holds the [https://developers.google.com/appengine/docs/adminconsole/ Google App Engine application id] to which the site should be deployed. See the App Engine dashboard and documentation for more information.
     * *Application Version* - Holds the Google App Engine application id version number which the site should be deployed as. See the App Engine dashboard and documentation for more information.
