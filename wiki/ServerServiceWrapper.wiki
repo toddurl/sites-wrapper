@@ -1,5 +1,5 @@
 #summary Functional Requirements of the Server Service Wrapper expressed as use cases.
 
-= Server Service Wrapper Configuration Client Functional Requirements =
+= Server Service Wrapper Functional Requirements =
 
 *TBD*
