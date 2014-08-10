@@ -1,4 +1,4 @@
-#summary Functional Requirements of the Android Configuration Client.
+#summary Functional Requirements of the Android Configuration Client expressed as use cases.
 
 = Android Configuration Client Functional Requirements =
 
