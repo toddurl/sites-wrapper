@@ -24,7 +24,7 @@
       * [References Hudson]
       * [References Application Data Model]
   * [OverallDescription Overall Description]
-    * [ProductPerspective Product Perspective]
+    * [ProductPerspective Project Perspective]
       # [SitesWrapper_AppEngine_GWT SitesWrapper-AppEngine-GWT]
       # [SitesWrapper_Android SitesWrapper-Android]
       # [SitesWrapper_iOS SitesWrapper-iOS]
