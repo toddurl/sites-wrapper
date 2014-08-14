@@ -12,3 +12,5 @@
   # [https://code.google.com/ Project Hosting] on Google Code, a free collaborative development environment for open source projects.
   # [http://hudson-ci.org/ Hudson] Extensible Continuous Integration Server.
   # [http://en.wikipedia.org/wiki/Data_model Application Data Model] A collection of objects or classes through which a program can examine and manipulate some specific parts of its world.
+  # [http://en.wikipedia.org/wiki/Selenium_(software) Selenium] A portable software testing framework for web applications.
+  # [http://appium.io/index.html Appium] An open source test automation framework for use with native and hybrid mobile apps, which drives the iOS and Android apps using the WebDriver JSON wire protocol.
