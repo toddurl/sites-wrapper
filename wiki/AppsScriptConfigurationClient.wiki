@@ -47,5 +47,5 @@ This goal is accomplished by the Configuration Client composing and sending a DK
     # Click Initialize
 ===Oracle==
 The following criteria are used for determining whether this scenario has passed or failed.
-  # Five new sheets are created as part of the spreadsheet, and appear at the bottom of the page labeled Site, Style, Landing, Item and Page.
-  # Five new objects appear in the Datastore Viewer of the App Engine dashboard for the towingenterpriseexecutive application instance (_i.e._: https://appengine.google.com/datastore/explorer?&app_id=s~towingenterpriseexecutive). The names of these objects match the names of the new sheets in the spreadsheet, Site, Style, Landing, Item and Page.
+  # Five new sheets are created as part of the spreadsheet, and appear at the bottom of the page labeled *Site*, *Style*, *Landing*, *Item* and *Page*.
+  # Five new objects appear in the Datastore Viewer of the App Engine dashboard for the towingenterpriseexecutive application instance (_i.e._: https://appengine.google.com/datastore/explorer?&app_id=s~towingenterpriseexecutive). The names of these objects match the names of the new sheets in the spreadsheet, *Site*, *Style*, *Landing*, Item* and *Page*.
