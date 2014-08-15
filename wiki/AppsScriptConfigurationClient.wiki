@@ -5,7 +5,7 @@
 ==Title: _Initialize and bind the spreadsheet to the datastore_==
 ===Identifier: _GAS-1_===
 ===Goal:===
-Initially neither the spreadsheet or the datastore contain information and there ins't an established relationship of trust between the two. In order to overcome this situation, the user of the configuration client binds the configuration document (_i.e._; the newly created spreadsheet) to the newly created Server Service Wrapper, which at this point will have an empty datastore, and creates a new, default configuration which matches between the two (_i.e._; the spreadsheet and the datastore).
+Initially neither the spreadsheet nor the datastore contain information, and there ins't an established relationship of trust between the two. In order to overcome this situation, the user of the configuration client binds the configuration document (_i.e._; the newly created spreadsheet) to the newly created Server Service Wrapper, which at this point will have an empty datastore, and creates a new, default configuration which matches between the two (_i.e._; the spreadsheet and the datastore).
 
 This goal is accomplished by the Configuration Client composing and sending a DKIM (DomainKeys Identified Mail) verified email to the Service Server Wrapper having the application id in the subject line and the Google Apps document id of the Configuration Client in the id field of the mail header. Since the datastore is empty, and DKIM verified domain of the sender matches the domain of the receiver, the Server Service Wrapper can be certain the document id contained in the header is in fact authorized by the application owner to initialize and subsequently update the configuration in the datastore.
 ===Primary Actor: _Application Owner_===
@@ -14,7 +14,7 @@ This use case requires that:
   # The SitesWrapper-GAE-GWT software has just been installed in (_i.e._: deployed to) Google App Engine as an application administered by the same Google account as the primary actor.
   # The primary actor knows the *application id* of the application in Google App Engine.
   # The primary actor is currently logged in (authenticated) to their Google Account.
-For this test case, the application id is *towingenterpriseexecutive*.
+For this test case associated with this use case the application id is *towingenterpriseexecutive*.
 ===Scenario:==
   # Application Owner installs SitesWrapper-App-Script.
     # Browse to Google Code (https://code.google.com/p/siteswrapper-apps-script/)
