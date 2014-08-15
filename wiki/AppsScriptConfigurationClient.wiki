@@ -2,4 +2,11 @@
 
 = Apps Script Configuration Client Functional Requirements =
 
-*TBD*
+==Title: _Initialize and bind the the spreadsheet and datastore_==
+
+==Primary Actor: _Application Owner_==
+
+===Pre-conditions===
+This use case requires that the SitesWrapper-GAE-GWT software has just been installed in (deployed to) Google App Engine as an application administered by the same Google account as the primary actor in the use case, and that the primary actor knows the *application id* of the application in Google App Engine.
+===Title===
+Initially neither the spreadsheet or the datastore contains information and there ins't an established relationship of trust between the two. In order to overcome this situation, the user of the 
