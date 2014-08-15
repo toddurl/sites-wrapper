@@ -13,3 +13,5 @@
     * *SEO* (Search engine optimization) is the process of affecting the visibility of a website or a web page in a search engine's "natural" or un-paid ("organic") search results.
   # OAuth 2.0
     * *OAuth 2.0* is an open standard for authorization which provides client applications a 'secure delegated access' to server resources on behalf of a resource owner.
+  # Application Owner
+    * The Google account in which the SitesWrapper-GAE-GWT software is deployed to Google App Engine. The Google account belonging to the application owner owns the Google App Engine application id as well as the domain name and administrative dashboard of the application in App Engine. (_e.g._; http://application_id.appspot.com)
