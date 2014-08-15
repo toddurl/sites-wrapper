@@ -1,12 +1,51 @@
 #summary Functional Requirements of the Apps Script Configuration Client expressed as use cases.
 
-= Apps Script Configuration Client Functional Requirements =
+=Apps Script Configuration Client Functional Requirements=
 
 ==Title: _Initialize and bind the spreadsheet to the datastore_==
+===Identifier: _GAS-1_===
+===Primary Actor: _Application Owner_===
+===Precondition===
+This use case requires that:
+  # The SitesWrapper-GAE-GWT software has just been installed in (_i.e._: deployed to) Google App Engine as an application administered by the same Google account as the primary actor.
+  # The primary actor knows the *application id* of the application in Google App Engine.
+  # The primary actor is currently logged in (authenticated) to their Google Account.
+For this test case, the application id is *towingenterpriseexecutive*.
+===Goal===
+Initially neither the spreadsheet or the datastore contains information and there ins't an established relationship of trust between the two. In order to overcome this situation, the user of the configuration client binds the configuration document (_i.e._; the newly created spreadsheet) to the newly created Server Service Wrapper, which at this point will have an empty datastore, and creates a new, default configuration which matches between the two (_i.e._; the spreadsheet and the datastore).
 
-==Primary Actor: _Application Owner_==
-
-===Pre-conditions===
-This use case requires that the SitesWrapper-GAE-GWT software has just been installed in (deployed to) Google App Engine as an application administered by the same Google account as the primary actor in the use case, and that the primary actor knows the *application id* of the application in Google App Engine.
-===Title===
-Initially neither the spreadsheet or the datastore contains information and there ins't an established relationship of trust between the two. In order to overcome this situation, the user of the 
+This goal is accomplished by the Configuration Client composing and sending a DKIM (DomainKeys Identified Mail) verified email to the Service Server Wrapper having the application id in the subject line and the Google Apps document id of the Configuration Client in the id field of the mail header. Since the datastore is empty, and DKIM verified domain of the sender matches the domain of the receiver, the Server Service Wrapper can be certain the document id contained in the header is in fact authorized by the application owner to initialize and subsequently update the configuration in the datastore.
+===Scenario==
+  # Application Owner installs SitesWrapper-App-Script.
+    # Browse to Google Code (https://code.google.com/p/siteswrapper-apps-script/)
+    # Click Source
+    # Click Browse
+    # Click SitesWrapper-Apps-Script
+    # Click Code.gs
+    # Click Edit file
+    # Click anywhere in the file
+    # Select all (control a)
+    # Copy (control c)
+    # Browse to Google Drive (http://drive.google.com)
+    # Click Create
+    # Click Spreadsheet
+    # Click Untitled Spreadsheet
+    # Type towingenterpriseexecutive
+    # Click OK
+    # Click Tools
+    # Click Script editor
+    # Click Blank Project
+    # Select all (control a)
+    # Paste (control v)
+    # Click Untitled Project
+    # Type towingenterpriseexecutive
+    # Click OK
+    # Click close tab
+    # Click towingenterpriseexecutive tab
+    # Click refresh
+    # Click SitesWrapper
+    # Click Initialize
+===Oracle==
+The following criteria are used for determining whether this scenario has passed or failed.
+  # Five new sheets are created as part of the spreadsheet, and appear at the bottom of the page labeled Site, Style, Landing, Item and Page.
+  # Five new objects appear in the Datastore Viewer of the App Engine dashboard for the towingenterpriseexecutive application instance (_i.e._: https://appengine.google.com/datastore/explorer?&app_id=s~towingenterpriseexecutive)
