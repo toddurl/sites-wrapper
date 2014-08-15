@@ -2,7 +2,7 @@
 
 = Apps Script Configuration Client Functional Requirements =
 
-==Title: _Initialize and bind the the spreadsheet and datastore_==
+==Title: _Initialize and bind the spreadsheet to the datastore_==
 
 ==Primary Actor: _Application Owner_==
 
