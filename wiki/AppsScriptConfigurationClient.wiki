@@ -18,6 +18,9 @@ For this test case associated with this use case the application id is *siteswra
 ===Scenario:==
   # Application Owner installs SitesWrapper-App-Script.
     # Browse to Google Code (https://code.google.com/p/siteswrapper-apps-script/)
+    # Click Login
+    # Type toddurl@urlisit.com(tab)password
+    # Click Login
     # Click Source
     # Click Browse
     # Click SitesWrapper-Apps-Script
