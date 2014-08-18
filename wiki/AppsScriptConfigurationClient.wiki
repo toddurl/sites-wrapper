@@ -3,7 +3,7 @@
 =Apps Script Configuration Client Functional Requirements=
 
 ==Title: _Initialize and bind the spreadsheet to the datastore_==
-===Identifier: _GAS-1_===
+===Identifier: _SitesWrapper-GAS-1_===
 ===Goal:===
 Initially neither the spreadsheet nor the datastore contain information, and there ins't an established relationship of trust between the two. In order to overcome this situation, the user of the configuration client binds the configuration document (_i.e._; the newly created spreadsheet) to the newly created Server Service Wrapper, which at this point will have an empty datastore, and creates a new, default configuration which matches between the two (_i.e._; the spreadsheet and the datastore).
 
