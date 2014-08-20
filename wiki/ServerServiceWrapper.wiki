@@ -2,4 +2,200 @@
 
 = Server Service Wrapper Functional Requirements =
 
-*TBD*
+==Title: _Drop the Server Service Wrapper configuration in the datastore_==
+===Identifier: _SitesWrapper-GAE-GWT-1_===
+===Goal:===
+On occasion there arises the need to delete the contents of the datastore associated with an instance of the SitesWrapper-GAE-GWT Server Service Wrapper. Such a condition arises when the GAE application instance is being repurposed, or as part of a _setup_ routine which needs to be executed in order to test the features of another application component, the Apps Script Configuration Client for example.
+
+The following steps will result in the data associated with a SitesWrapper-GAE-GWT application instance in Google App Engine being completely deleted.
+===Primary Actor: _Application Administrator_===
+===Precondition:===
+This use case requires that:
+  # The SitesWrapper-GAE-GWT software has been previously installed, initialized and updated at least once in Google App Engine as an application administered by the same Google account as the primary actor.
+  # The primary actor knows the *application id* of the application in Google App Engine.
+  # The primary actor is currently logged in (authenticated) to their Google Account.
+The Test Case or Test Script associated with this Use Case should use the application id *siteswrapper*.
+===Scenario:==
+  # Application Owner drops the datastore Entities associated with a SitesWrapper-GAE-GWT install.
+    # Browse to Google Code (https://code.google.com/p/siteswrapper-apps-script/)
+    # Click Login
+    # Type toddurl@urlisit.com(tab)password
+    # Click Login
+    # Click Source
+    # Click Browse
+    # Click SitesWrapper-Apps-Script
+    # Click Code.gs
+    # Click Edit file
+    # Click anywhere in the file
+    # Select all (control a)
+    # Copy (control c)
+    # Browse to Google Drive (http://drive.google.com)
+    # Click Create
+    # Click Spreadsheet
+    # Click Untitled Spreadsheet
+    # Type siteswrapper
+    # Click OK
+    # Click Tools
+    # Click Script editor
+    # Click Blank Project
+    # Select all (control a)
+    # Paste (control v)
+    # Click Untitled Project
+    # Type siteswrapper
+    # Click OK
+    # Click close tab
+    # Click siteswrapper tab
+    # Click refresh
+    # Click SitesWrapper
+    # Click Initialize
+===Oracle:==
+The following criteria are used for determining whether this scenario has passed or failed.
+  # Five new sheets are created as part of the spreadsheet, and appear at the bottom of the page labeled *Site*, *Style*, *Landing*, *Item* and *Page*.
+  # One new objects appears in the Datastore Viewer of the App Engine dashboard for the siteswrapper application instance (_i.e._: https://appengine.google.com/datastore/explorer?&app_id=s~siteswrapper). The name of the object is *ConfigurationId*.
+
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/p/siteswrapper-apps-script/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Source</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Browse</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=SitesWrapper-Apps-Script</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Code.gs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit file</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id=':22.cmi']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=docs-title-inner</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=:bo.ie</td>
+	<td>siteswrapper</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>MacroService355329354</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=MacroService355329354</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=textarea</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=docs-title-inner</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.gwt-TextBox.rename-input</td>
+	<td>siteswrapper</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.gwt-Button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='saveButton']/div/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_approve_access</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=ae-datastore-explorer-kind</td>
+	<td>label=Site</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=ae-datastore-explorer-kind</td>
+	<td>label=Style</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=ae-datastore-explorer-kind</td>
+	<td>label=Landing</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=ae-datastore-explorer-kind</td>
+	<td>label=Item</td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>An error occured while loading image undefined</td>
+	<td></td>
+</tr>
+
+</tbody></table>
