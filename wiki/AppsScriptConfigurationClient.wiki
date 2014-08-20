@@ -14,7 +14,7 @@ This Use Case requires that:
   # The SitesWrapper-GAE-GWT software has just been installed in (_i.e._: deployed to) Google App Engine as an application administered by the same Google account as the primary actor.
   # The primary actor knows the *application id* of the application in Google App Engine.
   # The primary actor is currently logged in (authenticated) to their Google Account.
-  # In the case that SitesWrapper-Apps-Script has already been installed and this Use Case needs to be performed (_i.e._; the Test Case needs to be re-executed), Use Case [https://code.google.com/p/sites-wrapper/wiki/ServerServiceWrapper SitesWrapper-GAE-GWT-1] can be executed as a setup routine.
+  # *Note* - In the case that SitesWrapper-Apps-Script has already been installed and this Use Case needs to be performed (_i.e._; the Test Case needs to be re-executed), Use Case [https://code.google.com/p/sites-wrapper/wiki/ServerServiceWrapper SitesWrapper-GAE-GWT-1] (Drop the Server Service Wrapper configuration in the datastore) can be executed as a setup routine.
 The Test Case and Test Script associated with this Use Case should use the following data:
   * Google account *toddurl@urlisit.com*
   * Password *N/A*
