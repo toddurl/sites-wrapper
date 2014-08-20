@@ -1,4 +1,4 @@
-#summary Functional Requirements of the Apps Script Configuration Client expressed as use cases.
+#summary Functional Requirements of the Apps Script Configuration Client expressed as Use Cases.
 
 =Apps Script Configuration Client Functional Requirements=
 
@@ -10,14 +10,18 @@ Initially neither the spreadsheet nor the datastore contain information, and the
 This goal is accomplished by the Configuration Client composing and sending a DKIM (DomainKeys Identified Mail) verified email to the Service Server Wrapper having the application id in the subject line and the Google Apps document id of the Configuration Client in the id field of the mail header. Since the datastore is empty, and DKIM verified domain of the sender matches the domain of the receiver, the Server Service Wrapper can be certain the document id contained in the header is in fact authorized by the application owner to initialize and subsequently update the configuration in the datastore.
 ===Primary Actor: _Application Administrator_===
 ===Precondition:===
-This use case requires that:
+This Use Case requires that:
   # The SitesWrapper-GAE-GWT software has just been installed in (_i.e._: deployed to) Google App Engine as an application administered by the same Google account as the primary actor.
   # The primary actor knows the *application id* of the application in Google App Engine.
   # The primary actor is currently logged in (authenticated) to their Google Account.
-For this test case associated with this use case the application id is *siteswrapper*.
+  # In the case that SitesWrapper-Apps-Script has already been installed and this Use Case needs to be performed (_i.e._; the Test Case needs to be re-executed), Use Case SitesWrapper-GAE-GWT-1 can be executed as a setup routine.
+The Test Case and Test Script associated with this Use Case should use the following data:
+  * Google account *toddurl@urlisit.com*
+  * Password *N/A*
+  * GAE application id *siteswrapper*
 ===Scenario:==
-  # Application Owner installs SitesWrapper-App-Script.
-    # Browse to Google Code (https://code.google.com/p/siteswrapper-apps-script/)
+  # _SitesWrapper-Apps-Ascript-1_ Application Owner installs SitesWrapper-App-Script.
+    # Open https://code.google.com/p/siteswrapper-apps-script/)
     # Click Login
     # Type toddurl@urlisit.com(tab)password
     # Click Login
