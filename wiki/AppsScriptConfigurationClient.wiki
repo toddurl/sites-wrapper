@@ -53,7 +53,7 @@ The following criteria are used for determining whether this scenario has passed
   # Five new sheets are created as part of the spreadsheet, and appear at the bottom of the page labeled *Site*, *Style*, *Landing*, *Item* and *Page*.
   # One new objects appears in the Datastore Viewer of the App Engine dashboard for the siteswrapper application instance (_i.e._: https://appengine.google.com/datastore/explorer?&app_id=s~siteswrapper). The name of the object is *ConfigurationId*.
 
-==Title: _Update-SitesWrapper-GAE-GWT datastore with the default configuration_==
+==Title: _Update SitesWrapper-GAE-GWT datastore with the default configuration_==
 ===Identifier: _SitesWrapper-GAS-2_===
 ===Goal:===
 SitesWrapper initialization results in a ConfigurationId entity with a valid Id being created in the datastore, as well as a valid default configuration being created in the spreadsheet managed by the Apps Script Configuration Client, but the application data model still needs to be created in the datastore and populated with the data in the spreadsheet.
