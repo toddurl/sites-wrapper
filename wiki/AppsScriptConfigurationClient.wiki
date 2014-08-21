@@ -1,6 +1,6 @@
 #summary Functional Requirements of the Apps Script Configuration Client expressed as Use Cases.
 
-=SitesWrapper-Apps-Script Functional Requirements=
+=Functional Requirements for SitesWrapper-Apps-Script=
 
 ==Title: _Initialize and bind the spreadsheet to the datastore_==
 ===Identifier: _SitesWrapper-GAS-1_===
