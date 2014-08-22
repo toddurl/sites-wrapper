@@ -3,7 +3,7 @@
 = Functional Requirements - _Server Service Wrapper_ =
 
 ==Title: _Drop the Server Service Wrapper configuration in the datastore_==
-===Identifier: _SitesWrapper-GAE-GWT-1_===
+===Identifier: _SitesWrapper-GAE-1_===
 ===Goal:===
 On occasion there arises the need to delete the contents of the datastore associated with an instance of the SitesWrapper-GAE-GWT Server Service Wrapper. Such a condition arises when the GAE application instance is being repurposed, or as part of a _setup_ routine which needs to be executed in order to test the features of another application component, the Apps Script Configuration Client for example.
 
