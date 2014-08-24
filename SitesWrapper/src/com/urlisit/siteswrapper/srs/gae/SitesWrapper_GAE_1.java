@@ -59,6 +59,7 @@ public class SitesWrapper_GAE_1 {
     driver = new FirefoxDriver();
     baseUrl = "https://accounts.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    String adminPasswd = SitesWrapper.getAdministratorPasswd();
   }
 
   @Test
@@ -67,7 +68,7 @@ public class SitesWrapper_GAE_1 {
     driver.findElement(By.id("Email")).clear();
     driver.findElement(By.id("Email")).sendKeys(SitesWrapper.ADMINISTRATOR_EMAIL);
     driver.findElement(By.id("Passwd")).clear();
-    driver.findElement(By.id("Passwd")).sendKeys(SitesWrapper.ADMINISTRATOR_PASSWD);
+    driver.findElement(By.id("Passwd")).sendKeys(SitesWrapper.getAdministratorPasswd());
     driver.findElement(By.id("signIn")).click();
     new Select(driver.findElement(By.id("ae-datastore-explorer-kind"))).selectByVisibleText("Site");
     driver.findElement(By.cssSelector("th.cbc.tct-selectall > input[type=\"checkbox\"]")).click();

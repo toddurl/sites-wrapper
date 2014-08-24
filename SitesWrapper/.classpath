@@ -5,5 +5,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="/Users/url/Projects/SitesWrapper/workspace/SitesWrapper/libs/selenium-java-2.42.2.jar"/>
 	<classpathentry kind="lib" path="/Users/url/Projects/SitesWrapper/workspace/SitesWrapper/libs/selenium-server-standalone-2.42.2.jar"/>
+	<classpathentry kind="lib" path="libs/expectit-core-0.5.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
