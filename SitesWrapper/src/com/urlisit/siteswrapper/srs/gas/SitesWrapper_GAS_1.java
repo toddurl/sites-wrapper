@@ -110,11 +110,12 @@ public class SitesWrapper_GAS_1 {
       /*
        * Log into the datastore viewer
        */
-      driver.get(baseUrl + "/ServiceLogin?service=ah&passive=true&continue=https%3A%2F%2Fappengine.google.com%2F_ah%2Fconflogin%3Fcontinue%3Dhttps%3A%2F%2Fappengine.google.com%2Fdatastore%2Fexplorer%253F%2526app_id%253Ds%7Esiteswrapper&ltmpl=ae");
+      //driver.get(baseUrl + "/ServiceLogin?service=ah&passive=true&continue=https%3A%2F%2Fappengine.google.com%2F_ah%2Fconflogin%3Fcontinue%3Dhttps%3A%2F%2Fappengine.google.com%2Fdatastore%2Fexplorer%253F%2526app_id%253Ds%7Esiteswrapper&ltmpl=ae");
+      driver.get(baseUrl + SitesWrapper.DATASTORE_VIEWER_LOGIN_URI);
       driver.findElement(By.id("Email")).clear();
-      driver.findElement(By.id("Email")).sendKeys("toddurl@urlisit.com");
+      driver.findElement(By.id("Email")).sendKeys(SitesWrapper.ADMINISTRATOR_EMAIL);
       driver.findElement(By.id("Passwd")).clear();
-      driver.findElement(By.id("Passwd")).sendKeys("w4rH4mm3r");
+      driver.findElement(By.id("Passwd")).sendKeys(SitesWrapper.getAdministratorPasswd());
       driver.findElement(By.id("signIn")).click();
       /*
        * Delete the Site object
@@ -175,11 +176,12 @@ public class SitesWrapper_GAS_1 {
       /*
        * Login to Google Docs
        */
-      driver.get(baseUrl + "/ServiceLogin?continue=https%3A%2F%2Fdocs.google.com%2Fa%2Furlisit.com%2Fspreadsheets%2Fd%2F1HG6P-MswtJoXPSKhIhi0xl8gUGm5Whh-oivVNb9zd_s%2Fedit&ltmpl=sheets&service=wise&sacu=1&hd=urlisit.com");
+      //driver.get(baseUrl + "/ServiceLogin?continue=https%3A%2F%2Fdocs.google.com%2Fa%2Furlisit.com%2Fspreadsheets%2Fd%2F1HG6P-MswtJoXPSKhIhi0xl8gUGm5Whh-oivVNb9zd_s%2Fedit&ltmpl=sheets&service=wise&sacu=1&hd=urlisit.com");
+      driver.get(baseUrl + SitesWrapper.APPS_SCRIPT_CONFIGURATION_CLIENT_LOGIN_URI);
       driver.findElement(By.id("Email")).clear();
       driver.findElement(By.id("Email")).sendKeys(SitesWrapper.ADMINISTRATOR_EMAIL);
       driver.findElement(By.id("Passwd")).clear();
-      driver.findElement(By.id("Passwd")).sendKeys(SitesWrapper.ADMINISTRATOR_PASSWD);
+      driver.findElement(By.id("Passwd")).sendKeys(SitesWrapper.getAdministratorPasswd());
       driver.findElement(By.id("signIn")).click();
       /*
        * Switch the selenium context to the sidebar menu
@@ -281,7 +283,7 @@ public class SitesWrapper_GAS_1 {
     driver.findElement(By.id("Email")).clear();
     driver.findElement(By.id("Email")).sendKeys(SitesWrapper.ADMINISTRATOR_EMAIL);
     driver.findElement(By.id("Passwd")).clear();
-    driver.findElement(By.id("Passwd")).sendKeys(SitesWrapper.ADMINISTRATOR_PASSWD);
+    driver.findElement(By.id("Passwd")).sendKeys(SitesWrapper.getAdministratorPasswd());
     driver.findElement(By.id("PersistentCookie")).click();
     driver.findElement(By.id("signIn")).click();
     /*
