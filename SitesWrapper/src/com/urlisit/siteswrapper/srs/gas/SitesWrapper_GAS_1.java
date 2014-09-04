@@ -34,16 +34,17 @@ import com.urlisit.siteswrapper.srs.SitesWrapper;
 
 /**
  * <a href="https://code.google.com/p/sites-wrapper/wiki/AppsScriptConfigurationClient" >
- * SitesWrapper-GAS-1</a> - Bind and initialize the spreadsheet and update the
- * initial configuration in the datastore
+ * SitesWrapper-GAS-1</a> - Bind the spreadsheet to the datastore, initialize
+ * the spreadsheet's configuration and update the datastore with the initial
+ * configuration.
  * <p>
  * Initially neither the spreadsheet nor the datastore contain information, and
  * there ins't an established relationship of trust between the two. In order
  * to overcome this situation, the user of the configuration client binds the
- * configuration document (_i.e._; the newly created spreadsheet) to the newly
+ * configuration document (i.e.; the newly created spreadsheet) to the newly
  * created Server Service Wrapper, which at this point will have an empty
  * data-store, and creates a new, default configuration which matches between
- * the two (_i.e._; the spreadsheet and the datastore).
+ * the two (i.e.; the spreadsheet and the datastore).
  * <p>
  * This goal is accomplished by the Configuration Client composing and sending
  * a DKIM (DomainKeys Identified Mail) verified email to the Service Server 
