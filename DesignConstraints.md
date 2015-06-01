@@ -1,0 +1,13 @@
+# Design Constraints #
+
+The primary constraints with respect to design of the system are defined within the realms of standards compliance and architectural imposition.
+
+## Standards Compliance ##
+
+All software requirements will be collected and maintained as defined in the ANSI/IEEE 830 standard for software requirements specifications.
+
+All software test documentation will adhere to the requirements specified in the ANSI/IEEE 829 standard for software test documentation.
+
+## Architecturally Imposed Constraints ##
+
+**TBD**

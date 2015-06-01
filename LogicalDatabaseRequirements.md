@@ -1,0 +1,96 @@
+# Logical Database Requirements #
+
+The Google App Engine Datastore shall persist the following objects which represent the SitesWrapper Application Data Model (_i.e._: The Object Model).
+
+[![](https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/SitesWrapper_Application_Data_Model.png)](https://www.linkedin.com/profile/view?id=50532854)
+
+## Site ##
+A singleton which holds the following global data relevant to the current configuration of the entire web app.
+  * **Name** - Holds the name to be used throughout the site. For example, it could be the name of a company, organization or person the site represents.
+  * **Application ID** - Holds the [Google App Engine application id](https://developers.google.com/appengine/docs/adminconsole/) to which the site should be deployed. See the App Engine dashboard and documentation for more information.
+  * **Application Version** - Holds the Google App Engine application id version number which the site should be deployed as. See the App Engine dashboard and documentation for more information.
+  * **Look And Feel** - Selects a look and feel from a list of available themes.
+  * **Google Web Fonts Url** - Holds the value to have specified in the host page to make use of Google Web Fonts (e.g.; `http://fonts.googleapis.com/css?family=Aldrich|Raleway:100|Open+Sans:300,400`).
+  * **Favicon Url** - Holds the url for specifying the web app's favicon (e.g.; `http://ghostgames.com/favicon.ico`).
+  * **Apple Touch Icon** - Holds the url which specifies the Apple Touch Icon to use for the web app (e.g.; `http://ssl.gstatic.com/sites/p/fff931/system/app/images/apple-touch-icon.png`).
+  * **Default Page** - Selects the page to be used as the default from the list of available pages (e.g.; About Us).
+  * **Landing Display Style** - Select from the list of available styles of use when generating landing pages (i.e.; Bottom, None).
+  * **Revision History Enabled** - Selectable between “yes” and “no”.
+  * **Logo Type** - Selectable between “image” and “html”.
+  * **Logo Image** - Holds the url which specifies a site wide logo image to use when Logo Type is equal to image (e.g.; `http://ngm.com/125/flashback-firsts/img/05-flashback-125-machu-picchu.jpg`).
+  * **Logo Html** - Holds the html to be used as a system wide logo when Logo Type is equal to html (e.g.; `<h1><span style='font-family:Aldrich,arial,sans-serif;font-style:italic;font-weight:normal'><font color=#ffffff>The</font><font color=#00ff00>Green</font><font color=#ffffff>URL</font></span><sup><font color=#ffffff size=2>&reg;</font></sup></h1>`).
+  * **Footer Html** - Holds the html to be used as the web app's footer (e.g.; `<p><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://toddurl.appspot.com">URL IS/IT</a></b></p>`).
+  * **RPC Error Message** - Text message to display in case of RPC failure (e.g.; Network Error - Check your network connection).
+
+## Style ##
+A singleton which holds data intended to customize the currently selected look and feel. The exact definition of each member is defined by LookAndFeel theme engine developer and is not necessarily consistent or applicable across all available themes.
+  * **Look And Feel** - Specifies the Look And Feel the Style entry should be applied to (i.e.; must be one of the values available for selection for the Look And Feel member of Site). (_e.g._; URL IS/IT)
+  * **Description** - A description of the Look And Feel specified in the Look And Field member of the Style object (_e.g._; Reminiscent of `www.usa.lighting.philips.com`).
+  * **Primary Color** - Html specified color to be used as the primary color for the specified Look And Feel (_e.g._; #101010).
+  * **Primary Accent Color** - Html specified value to use for accenting the primary color selected for the specified Look And Feel (_e.g._; #d6d6d6).
+  * **Secondary Accent Color** - Html specified value to use for accenting the primary color selected for the specified Look And Feel (_e.g._; #aaaaaa).
+  * **Tertiary Accent Color** - Html specified value to use for accenting the primary color selected for the specified Look And Feel (_e.g._; #eeeeee).
+  * **Main Menu Font Family**  - Google Web Font family to use for the specified Look And Feel. Must be available as specified by the Google Web Font Url member of the Site object (_e.g._; Open+Sans).
+  * **Main Menu Font Size** - Size in px to use for the font size of the main menu for the specified Look And Feel (_e.g._; 14px).
+  * **Main Menu Selection Font Color** - Html specified color to use when the main menu item is not-selected for the specified Look And Feel (_e.g._; #ffffff).
+  * **Main Menu Hover Font Color** - Html specified color to use for the main menu item when the cursor is hovering over it for the specified Look And Feel (_e.g._; #0000ff).
+  * **Main Menu Selected Font Color** - Html specified color to use when the main menu item is selected for the specified Look And Feel (_e.g._; #000cff).
+
+## Item ##
+A collection of information items for use in decorating the web app including but limited to images, html snippets and videos.
+  * **Name** - Human friendly name of the information item.
+  * **Type** - Selection from available Item Types (e.g.; Page, Video, Html, Text).
+  * **Description** - Human reader friendly description of the of the Item, often used as a caption for example (_e.g._; The 18 SMT Standard Light Bulb LED lamp).
+  * **Video Url** - Url which references a Youtube video for an Item of Type Video.
+  * **Image Url** - Url which references a picture for Items of Type Image.
+  * **Link Name** - Name in text to display as the name of the link to the information Item (_e.g._; See spot run).
+  * **Link Url** - Url used to reference this information Item.
+
+## Landing ##
+A collection of information item like objects used to generate Landing pages which exist "in addition to" the Page objects defined for the web app. Landings are URL reference-able and also "collectively listed" outside the current screen area of the web app in the web browser. In other words, the available Landings can be listed on every page of a web app in a way as not to distract from the main content of the web app and yet still be available for selection by end users as well as being able to be indexed and directed to by a search engine such as google.
+  * **Name** - Human friendly name of the information item.
+  * **Type** - Selection from available Item Types (e.g.; Page, Video, Html, Text).
+  * **Description** - Human reader friendly description of the of the Item, often used as a caption for example (_e.g._; The 18 SMT Standard Light Bulb LED lamp).
+  * **Video Url** - Url which references a Youtube video for an Item of Type Video.
+  * **Image Url** - Url which references a picture for Items of Type Image.
+  * **Link Name** - Name in text to display as the name of the link to the information Item (_e.g._; See spot run).
+  * **Link Url** - Url used to reference this information Item.
+  * **Specification** - The name portion of a collection of name/value pairs used to specify the name of a value.
+  * **Value** - The value portion of a collection of name/value pairs used to specify the value associated with a specification.
+
+## Page ##
+Main pages to be displayed and selected between using the main menu (e.g.; About Us, Contact). Each Page can be decorated and populated with content specific information by specifying values for the attributes defined in this section. In addition to the main menu (used to navigate between pages), a Page may be specified to contain one or more `<iframe>` style disclosures or “animated sub window” which can be activated via a button or menu selection and which are configured to display “in the AJAX style” (i.e.; without refreshing the page), a Google Sites site or some other url reference-able website or web app.
+  * **Name** - Name of the page or view to be displayed by either the Client or Server Service Wrapper (_e.g._; About Us, Contact).
+  * **Show Page Title** - Yes or no, display the name as the title of the view or page.
+  * **Logo Type** - Selection from one of type image or html.
+  * **Logo Image** - Url referencing the image to be used for a page specific logo.
+  * **Logo Html** - Html to be used for a page specific logo.
+  * **Language Translation Enabled** - Boolean selection between yes and no.
+  * **Translated Languages** - A collection of language codes to make available via Google Translation.
+  * **Custom Search Enabled** - Selection of yes or no as to whether Google Custom Search should be enabled for the overall web app. (Note - Switch does not affect the Google Sites site specific settings such as search)
+  * **Custom Search Urls** - Collection of Google Custom Search urls to use when Custom Search is enabled.
+  * **Main Menu Type** - The type of menu to render for use as an inter main page main menu (_e.g._; link or button)
+  * **Main Menu Direction** - Selectable direction LTR or RTL.
+  * **Main Menu Selection Html** - Html which should be displayed in the main menu when this page is not being displayed (_i.e._; **not selected**).
+  * **Main Menu Selected Html** - Html which should be displayed in the main menu when this page is being displayed (_i.e._; **selected**).
+  * **Background Image Urls** - Collection of image urls to be used for the background. Empty set equals no background image. A collection size of 1 equals background image, and greater than 1 equals carousel.
+  * **Background Image Duration** - Duration to display background image in carousel.
+  * **Content Menu Item Name** - The Name displayed for the Item entry in the Content Menu. Unique to each page is a Content Menu, which provides access to a collection of `<iframe>` style disclosures or “animated sub-windows” which can be activated via a button in the Content Menu, which is configured to display or disclose AJAX style (_i.e._; without refreshing the page), a Google Sites site or some other url reference-able website or web app.
+  * **Content Menu Item Link** - The Link used to access an Item entry in the Content Menu. The Content Menu, which is unique for each Page, provides sub menu style access to a collection of `<iframe>` style disclosures or “animated sub windows” which are activated by clicking a button in the Content Menu which discloses a Google Sites site or some other url reference able website or web app.
+  * **Content Menu Style Sheet** - Url which points to a stylesheet used to style the Content Menu.
+  * **Content Layout** - Layout style which the content of a page adheres to. In the initial release, “Left Sidebar” will be supported, although the selection control should indicate other intended future selection options as indicated below. [![](https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/ContentLayout.png)](https://www.linkedin.com/profile/view?id=50532854) **Note** - This parameter indicates the layout to be used for the content of the page as opposed to the content of the disclosures, which is determined by the settings of the individual Google Sites sites disclosed by the disclosure.
+  * **Content Header** - The portion of the content layout reserved for text and/or HTML at the top of the page as shown below for the Content Layout parameter “Left Sidebar”. ![https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/ContentHeader.png](https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/ContentHeader.png)
+  * **Content Column One** - The first or only column for Content Layouts as shown below for the parameter “Left Sidebar”. ![https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/ContentColumnOne.png](https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/ContentColumnOne.png)
+  * **Content Column Two** - The second text/html column for layouts having two or more columns. Content defined for a column that does not exist in a defined Content Layout will not be rendered. For example, the layout “Left Sidebar” does not have a column two. Consequently content specified for the parameter Content Column Two would not be rendered if the Content Layout parameter was specified as “Left Sidebar”.
+  * **Content Column Three** - The third text/html column for layouts having three columns. Content defined for a column that does not exist in a defined Content Layout will not be rendered. For example, the layout “Left Sidebar” does not have a column three. Consequently content specified for the parameter Content Column Three would not be rendered if the Content Layout parameter was specified as “Left Sidebar”.
+  * **Content Left Sidebar** - The portion of the page reserved for text/html defining the left sidebar as shown below. ![https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/ContentLeftSidebar.png](https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/ContentLeftSidebar.png)
+  * **Content Right Sidebar** - The portion of the page reserved for text/html defining the right sidebar. Content defined for a sidebar that does not exist in a defined Content Layout will not be rendered. For example, the layout “Left Sidebar” does not have a right sidebar. Consequently content specified for the parameter Content Right Sidebar would not be rendered if the Content Layout parameter was specified as “Left Sidebar”.
+  * **Content Footer** - The portion of the content layout reserved for text and/or HTML at the bottom of the page as shown below for the Content Layout parameter “Left Sidebar”. ![https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/ContentFooter.png](https://c824ff113391b7c600d1069f19350d6607b580e1.googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/ContentFooter.png)
+  * **Message Header Text** - Member of a Collection. The short summary of a message which is displayed to the user. Messages are used by the Client and Server Service Wrappers to display information to the user and optionally provide access to Information Items.
+  * **Message Body Text** - Member of a Collection. The Main text of a message which is displayed to the user. Messages are used by the Client and Server Service Wrappers to display information to the user and optionally provide access to Information Items.
+  * **Message Information Item** Member of a Collection. The link to an Information Item which corresponds to a message which is displayed to the user. Messages are used by the Client and Server Service Wrappers to display information to the user and optionally provide access to Information Items.
+  * **Message Html Color Code** - Member of a Collection. The color of a message which is displayed to the user.
+  * **Message Width Percent Of Page** - Member of a Collection. The width of a message displayed to a user expressed as a percentage of the browsers window width.
+  * **Message Percent Of Page From Left** - Member of a Collection. The location of the left edge of the message expressed as a percentage to the browsers window width.
+  * **Message Percent Of Page From Top** - Member of a Collection. The location of the top edge of the message expressed as a percentage to the browsers window height.
+  * **Message Duration Seconds** - Member of a Collection. The duration the message should be displayed to the user when more than one message is to be displayed in a message carousel.

@@ -1,0 +1,18 @@
+# Constraints, Assumptions and Dependencies #
+
+## Constraints ##
+
+  1. A complete **functional UI test suite** must be developed and maintained for each component based on the use cases identified in the **Functional Requirements** section of this wiki and must provide **100% functional coverage** where each use case is **verified end to end**. In the case of the Android Configuration Client this means **Uiautomator** will be used to drive the input, and **Selenium** will be used to verify the output.
+  1. A complete **unit test suite** must be developed and delivered with each Java based component. The unit test suite must be developed using JUnit and must provide 100% method coverage including all method entry and exit points as well as complete verification of the contract as implied by the method signature and specified in the javadoc.
+  1. All **javadoc** conventions must be followed and applied to all **class**, **member** and **method** definitions.
+  1. **Documentation**, **source code and version control** and management of all **issues** will be provided by **Project Hosting** on Google Code, a free collaborative development environment for open source projects.
+  1. **Continuous Integration** build and system integration testing will be managed using **Hudson**
+  1. All required **App permissions** will be identified, explained and **verified as being necessary** as part of the manifests used to submit configuration clients to their associated distribution channels (e.g. On Google Play and in the App Store) as well as being documented in this wiki.
+
+## Assumptions ##
+
+**TBD**
+
+## Dependencies ##
+
+**TBD**

@@ -1,0 +1,3 @@
+# Communication Interfaces #
+
+The software based communication interfaces for all components depend upon availability of an active TCP/IP connection. SitesWrapper has no provisions for off-line capabilities side from simply **failing gracefully** when communication dependent functionality is accessed while TCP/IP communication facilities are unavailable.

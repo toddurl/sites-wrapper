@@ -1,0 +1,7 @@
+# Introduction #
+
+SitesWrapper is a **theme-able**, **SEO** and **Analytics** enabled **GAE** hosted **GWT** based web application employing **OAuth 2.0** authentication which wraps and transforms Google Sites and Google Apps into a full featured content management system configured using **Android**, **Apps Script** and **iOS** based client software available on Google Play, Google Apps Marketplace and in the App Store.
+
+The configuration clients manage a collection of forms which represent the Application Data Model and are persisted, via the **Google Cloud Platform**, as entities in the Google Datastore and used to render the web application as HTML or JavaScript for mobile, tablet or desktop clients.
+
+[![](http://googledrive.com/host/0BzPelJUA_7zUT3ZfQVdNcmwzbDg/SitesWrapperArchitecture1.png)](https://www.linkedin.com/profile/view?id=50532854)

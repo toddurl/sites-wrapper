@@ -1,0 +1,15 @@
+# Definitions #
+
+  1. wrap·per  (răp′ər)
+    * **Client Wrapper** - The client side software component which executes in the desktop or mobile browser. The client wrapper is a Google Web Toolkit module having one or more views decorated with information items. Each view (or page) can wrap one or more Google Sites, presenting them as a coherent, sorted collection of Google Apps managed content.
+    * **Server Services Wrapper** - The server side components which generate a simple yet complete and useful server based HTML only website for browsers which don’t use JavaScript to render a page. In this case, SitesWrapper generates an HTML website having one or more views decorated with information items. Each view (or page) can wrap one or more Google Sites, presenting them as a GoogleBot crawlable collection of Google.
+  1. in·for·ma·tion i·tem  (ĭn′fər-mā′shən) (ī′təm)
+    * A URL reference-able resource. An **information item** of any type may reside anywhere in the internet. However, an information item’s attributes are defined via a configuration client and stored as a persistent object in the Google Datastore.
+  1. con·fig·u·ra·tion cli·ent (kən-fĭg′yə-rā′shən) (klī′ənt)
+    * A **configuration client** is a platform specific software item which reflects, and is used to maintain, the state of the configuration Entity objects in the Google Datastore via Google Cloud Endpoints.
+  1. SEO
+    * **SEO** (Search engine optimization) is the process of affecting the visibility of a website or a web page in a search engine's "natural" or un-paid ("organic") search results.
+  1. OAuth 2.0
+    * **OAuth 2.0** is an open standard for authorization which provides client applications a 'secure delegated access' to server resources on behalf of a resource owner.
+  1. Application Owner
+    * The Google account in which the SitesWrapper-GAE-GWT software is deployed to Google App Engine. The Google account belonging to the application owner owns the Google App Engine application id as well as the domain name and administrative dashboard of the application in App Engine. (_e.g._; http://application_id.appspot.com)

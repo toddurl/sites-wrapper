@@ -1,0 +1,7 @@
+# SitesWrapper-Apps-Script #
+
+  * **Apps Script Configuration Client** - Available as an Add-On, the Apps Script Configuration Client provides administrators the ability to configure a SitesWrapper site using a Google Apps spreadsheet.
+
+The spreadsheet Add-On covers all aspects of the site as well as the ability to add or remove pages or Google Sites within pages.
+
+Settings defined in the spreadsheet are propagated on demand to the entity objects in the GAE datastore.

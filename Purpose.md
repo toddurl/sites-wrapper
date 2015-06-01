@@ -1,0 +1,5 @@
+# Purpose #
+
+The purpose of this document is to thoroughly describe, through the use of requirements, the functionality of SitesWrapper, a collection of software items which leverages Google products and services to deliver a professional looking, feature rich internet presence to organizations of any type, size or financial position.
+
+In addition, by defining the functional requirements as a set of use cases that describe the interactions users will have with various components of the software system, this document will serve as the definitive basis for all “functional test” cases, procedures, scripts, suites and coverage metrics. This SRS also contains nonfunctional requirements. Non-functional requirements impose constraints on the design or implementation (such as performance engineering requirements, quality standards, or design constraints) .
